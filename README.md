@@ -17,3 +17,7 @@ reminad	7:20 提 醒 我 要 上 学 了
 cd cnn
 sh train.sh
 ```
+
+### predict
+
+online predict part is not written, and I won't write it in the future, because it is easy to write the online part.

@@ -1,0 +1,7 @@
+On Text Classification
+
+Now our online model which implemented in CNN (conv on query + tags) get a precision of 98%, but acc is low on some domain and depends on tags, it is not good in production usage. We should just depend on query.
+
+ - fasttext way: dev set is merged into train set. word level tokenization and la level tokenization doesn't make any difference. And la level tokenization has more parameters because of it's vocab size. this result maybe because fasttext use window size to handle Ngram, maybe la make 2-gram to 3-gram, 3-gram to 4-gram, but it is rare is vocab, and fasttext flexible window size can handle large Ngrams. And fasttext get a precision of 0.992, recall of 0.988, and f1 0.989, it is better than our CNN(query + tag) version. Why? I think it is because fasttext use subword information, but for Chinese words, subword information means utf8 encodings. One Chinese character has 3 bytes (3 utf8 code). this is it's subword information. it's a simple net, one hot embedding Vocab as input, one Hidden layer, and for sentence embedding, fasttext just sum over all the word level embedding and get the mean. and then a softmax layer to predict the label. I think, it's always good to create more featuers to extract more deep structure info from the sentence. like ngram, like subword information. and this will make the network simple. 
+
+ - cnn way: cnn way will not use tagging information. maybe use la information, maybe not.

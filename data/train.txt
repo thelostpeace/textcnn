@@ -1,0 +1,2 @@
+# this is a example
+remind	7:20 提 醒 我 要 上 学 了

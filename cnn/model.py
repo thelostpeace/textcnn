@@ -6,16 +6,16 @@ class TextCNN(nn.Module):
     """
         TextCNN model
     """
-    def __init__(self, emb_dim, emb_droprate, seq_len, filter_count, kernel_size, conv_droprate):
+    def __init__(self, vocab_size, emb_dim, emb_droprate, seq_len, filter_count, kernel_size, conv_droprate, num_class):
         super().__init__()
-        #self.vocab_size = vocab_size        # vocab size
+        self.vocab_size = vocab_size        # vocab size
         self.emb_dim = emb_dim              # embedding dimension
         self.emb_droprate = emb_droprate    # embedding dropout rate
         self.seq_len = seq_len              # sequence length
         self.filter_count = filter_count    # output feature size
         self.kernel_size = kernel_size      # list of kernel size, means kGram in text, ex. [1, 2, 3, 4, 5 ...]
         self.conv_droprate = conv_droprate  # conventional layer dropout rate
-        #self.num_class = num_class          # classes
+        self.num_class = num_class          # classes
         pass
 
     def build(self):

@@ -52,9 +52,21 @@ if os.path.exists(checkpoint_path):
 os.mkdir(checkpoint_path)
 model_name = "textcnn.pt"
 
+# do text parsing, get vocab size and class count
+build_vocab(args.train, args.output_vocab_label, args.output_vocab_word)
+label2id, id2label = load_vocab(args.output_vocab_label)
+word2id, id2word = load_vocab(args.output_vocab_word)
+
+vocab_size = len(word2id)
+num_class = len(label2id)
 
 # set model
-model = TextCNN(emb_dim=args.embedding_dim, emb_droprate=args.embedding_droprate, seq_len=args.sequence_len, filter_count=args.filter_count, kernel_size=kernel_size, conv_droprate=args.conv_droprate)
+model = TextCNN(vocab_size = vocab_size, num_class=num_class, emb_dim=args.embedding_dim, emb_droprate=args.embedding_droprate, seq_len=args.sequence_len, filter_count=args.filter_count, kernel_size=kernel_size, conv_droprate=args.conv_droprate)
+model.build()
+model.to(device)
+criterion = nn.CrossEntropyLoss().to(device)
+optimizer = optim.Adam(model.parameters(), lr=args.lr, weight_decay=1e-6)
+writer.add_graph(model, torch.randint(low=0,high=1000, size=(args.batch_size, args.sequence_len), dtype=torch.long).to(device))
 
 # padding sequence with <PAD>
 def padding(data, fix_length, pad, add_first="", add_last=""):
@@ -99,7 +111,7 @@ def save_checkpoint(state, is_best, filename="checkpoint"):
     if is_best:
         shutil.copyfile("%s/%s" % (checkpoint_path, name), "%s/%s" % (args.save_model, model_name))
 
-def train_epoch(train_data):
+def train(train_data):
     train_loss = 0
     train_acc = 0
     train_dataset = TextDataSet(train_data)
@@ -128,21 +140,6 @@ def test(test_data):
             valid_acc += (output.argmax(1) == label).sum().item()
 
     return valid_loss / len(test_dataset), valid_acc / len(test_dataset)
-
-def train():
-    # do text parsing, get vocab size and class count
-    build_vocab(args.train, args.output_vocab_label, args.output_vocab_word)
-    label2id, id2label = load_vocab(args.output_vocab_label)
-    word2id, id2word = load_vocab(args.output_vocab_word)
-
-    vocab_size = len(word2id)
-    num_class = len(label2id)
-    model.build()
-    model.to(device)
-    criterion = nn.CrossEntropyLoss().to(device)
-    optimizer = optim.Adam(model.parameters(), lr=args.lr, weight_decay=1e-6)
-    writer.add_graph(model, torch.randint(low=0,high=1000, size=(args.batch_size, args.sequence_len), dtype=torch.long).to(device))
-
 
 if __name__ == "__main__":
     if args.mode == 'train':

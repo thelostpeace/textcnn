@@ -51,6 +51,22 @@ online predict part is not written, and I won't write it in the future, because 
 use one-layer or multi-layer `LSTM`, `biLSTM`, `GRU`, `biGRU` to do text classification.
 
 ```
+-------------------------------------------------------------------------------------
+      Layer (type)                      Output Shape         Param #     Tr. Param #
+=====================================================================================
+       Embedding-1                     [32, 64, 300]       1,441,500       1,441,500
+         Dropout-2                     [32, 64, 300]               0               0
+             GRU-3     [32, 64, 1000], [1, 32, 1000]       3,906,000       3,906,000
+         Dropout-4                     [32, 1, 1000]               0               0
+          Linear-5                       [32, 1, 27]          27,027          27,027
+=====================================================================================
+Total params: 5,374,527
+Trainable params: 5,374,527
+Non-trainable params: 0
+-------------------------------------------------------------------------------------
+```
+
+```
 cd rnn
 sh train.sh
 ```

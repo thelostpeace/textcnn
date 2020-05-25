@@ -1,0 +1,1202 @@
+cuda
+----------------------------------------------------------------------------------------------------
+      Layer (type)                                     Output Shape         Param #     Tr. Param #
+====================================================================================================
+       Embedding-1                                    [32, 64, 300]       1,441,500       1,441,500
+         Dropout-2                                    [32, 64, 300]               0               0
+            LSTM-3     [32, 64, 1000], [1, 32, 1000], [1, 32, 1000]       5,208,000       5,208,000
+         Dropout-4                                    [32, 1, 1000]               0               0
+          Linear-5                                      [32, 1, 27]          27,027          27,027
+====================================================================================================
+Total params: 6,676,527
+Trainable params: 6,676,527
+Non-trainable params: 0
+----------------------------------------------------------------------------------------------------
+Epoch: 1  | time in 4 minutes, 0 seconds
+	Loss: 0.0713(train)	|	Acc: 42.7%(train)
+	Loss: 0.0711(valid)	|	Acc: 42.7%(valid)
+Epoch: 2  | time in 3 minutes, 59 seconds
+	Loss: 0.0711(train)	|	Acc: 42.7%(train)
+	Loss: 0.0711(valid)	|	Acc: 42.7%(valid)
+Epoch: 3  | time in 4 minutes, 1 seconds
+	Loss: 0.0711(train)	|	Acc: 42.7%(train)
+	Loss: 0.0711(valid)	|	Acc: 42.7%(valid)
+Epoch: 4  | time in 4 minutes, 0 seconds
+	Loss: 0.0711(train)	|	Acc: 42.7%(train)
+	Loss: 0.0711(valid)	|	Acc: 42.7%(valid)
+Epoch: 5  | time in 4 minutes, 0 seconds
+	Loss: 0.0711(train)	|	Acc: 42.7%(train)
+	Loss: 0.0710(valid)	|	Acc: 42.7%(valid)
+Epoch: 6  | time in 4 minutes, 1 seconds
+	Loss: 0.0711(train)	|	Acc: 42.7%(train)
+	Loss: 0.0710(valid)	|	Acc: 42.7%(valid)
+Epoch: 7  | time in 4 minutes, 1 seconds
+	Loss: 0.0711(train)	|	Acc: 42.7%(train)
+	Loss: 0.0711(valid)	|	Acc: 42.7%(valid)
+Epoch: 8  | time in 4 minutes, 2 seconds
+	Loss: 0.0711(train)	|	Acc: 42.7%(train)
+	Loss: 0.0710(valid)	|	Acc: 42.7%(valid)
+Epoch: 9  | time in 3 minutes, 58 seconds
+	Loss: 0.0710(train)	|	Acc: 42.7%(train)
+	Loss: 0.0711(valid)	|	Acc: 42.7%(valid)
+Epoch: 10  | time in 4 minutes, 0 seconds
+	Loss: 0.0710(train)	|	Acc: 42.7%(train)
+	Loss: 0.0710(valid)	|	Acc: 42.7%(valid)
+Epoch: 11  | time in 3 minutes, 58 seconds
+	Loss: 0.0710(train)	|	Acc: 42.7%(train)
+	Loss: 0.0710(valid)	|	Acc: 42.7%(valid)
+Epoch: 12  | time in 3 minutes, 58 seconds
+	Loss: 0.0710(train)	|	Acc: 42.7%(train)
+	Loss: 0.0710(valid)	|	Acc: 42.7%(valid)
+Epoch: 13  | time in 3 minutes, 59 seconds
+	Loss: 0.0710(train)	|	Acc: 42.7%(train)
+	Loss: 0.0710(valid)	|	Acc: 42.7%(valid)
+Epoch: 14  | time in 3 minutes, 59 seconds
+	Loss: 0.0710(train)	|	Acc: 42.7%(train)
+	Loss: 0.0710(valid)	|	Acc: 42.7%(valid)
+Epoch: 15  | time in 4 minutes, 1 seconds
+	Loss: 0.0710(train)	|	Acc: 42.7%(train)
+	Loss: 0.0710(valid)	|	Acc: 42.7%(valid)
+Epoch: 16  | time in 3 minutes, 59 seconds
+	Loss: 0.0710(train)	|	Acc: 42.7%(train)
+	Loss: 0.0710(valid)	|	Acc: 42.7%(valid)
+Epoch: 17  | time in 4 minutes, 0 seconds
+	Loss: 0.0710(train)	|	Acc: 42.7%(train)
+	Loss: 0.0711(valid)	|	Acc: 42.7%(valid)
+Epoch: 18  | time in 4 minutes, 1 seconds
+	Loss: 0.0563(train)	|	Acc: 50.4%(train)
+	Loss: 0.0431(valid)	|	Acc: 56.2%(valid)
+Epoch: 19  | time in 4 minutes, 1 seconds
+	Loss: 0.0336(train)	|	Acc: 63.7%(train)
+	Loss: 0.0247(valid)	|	Acc: 75.2%(valid)
+Epoch: 20  | time in 4 minutes, 5 seconds
+	Loss: 0.0185(train)	|	Acc: 82.1%(train)
+	Loss: 0.0138(valid)	|	Acc: 87.4%(valid)
+Epoch: 21  | time in 4 minutes, 1 seconds
+	Loss: 0.0110(train)	|	Acc: 89.8%(train)
+	Loss: 0.0098(valid)	|	Acc: 90.8%(valid)
+Epoch: 22  | time in 4 minutes, 4 seconds
+	Loss: 0.0081(train)	|	Acc: 92.4%(train)
+	Loss: 0.0077(valid)	|	Acc: 92.7%(valid)
+Epoch: 23  | time in 4 minutes, 1 seconds
+	Loss: 0.0066(train)	|	Acc: 93.7%(train)
+	Loss: 0.0067(valid)	|	Acc: 93.7%(valid)
+Epoch: 24  | time in 4 minutes, 1 seconds
+	Loss: 0.0058(train)	|	Acc: 94.4%(train)
+	Loss: 0.0063(valid)	|	Acc: 94.2%(valid)
+Epoch: 25  | time in 4 minutes, 3 seconds
+	Loss: 0.0052(train)	|	Acc: 94.9%(train)
+	Loss: 0.0057(valid)	|	Acc: 94.5%(valid)
+Epoch: 26  | time in 4 minutes, 3 seconds
+	Loss: 0.0047(train)	|	Acc: 95.3%(train)
+	Loss: 0.0054(valid)	|	Acc: 94.8%(valid)
+Epoch: 27  | time in 4 minutes, 4 seconds
+	Loss: 0.0044(train)	|	Acc: 95.7%(train)
+	Loss: 0.0051(valid)	|	Acc: 95.1%(valid)
+Epoch: 28  | time in 4 minutes, 3 seconds
+	Loss: 0.0040(train)	|	Acc: 96.0%(train)
+	Loss: 0.0050(valid)	|	Acc: 95.0%(valid)
+Epoch: 29  | time in 4 minutes, 4 seconds
+	Loss: 0.0038(train)	|	Acc: 96.2%(train)
+	Loss: 0.0050(valid)	|	Acc: 95.2%(valid)
+Epoch: 30  | time in 4 minutes, 4 seconds
+	Loss: 0.0035(train)	|	Acc: 96.4%(train)
+	Loss: 0.0052(valid)	|	Acc: 95.0%(valid)
+Epoch: 31  | time in 4 minutes, 4 seconds
+	Loss: 0.0034(train)	|	Acc: 96.6%(train)
+	Loss: 0.0050(valid)	|	Acc: 95.2%(valid)
+Epoch: 32  | time in 4 minutes, 2 seconds
+	Loss: 0.0032(train)	|	Acc: 96.8%(train)
+	Loss: 0.0049(valid)	|	Acc: 95.3%(valid)
+Epoch: 33  | time in 3 minutes, 58 seconds
+	Loss: 0.0030(train)	|	Acc: 96.9%(train)
+	Loss: 0.0049(valid)	|	Acc: 95.3%(valid)
+Epoch: 34  | time in 4 minutes, 1 seconds
+	Loss: 0.0028(train)	|	Acc: 97.1%(train)
+	Loss: 0.0048(valid)	|	Acc: 95.6%(valid)
+Epoch: 35  | time in 3 minutes, 58 seconds
+	Loss: 0.0027(train)	|	Acc: 97.2%(train)
+	Loss: 0.0051(valid)	|	Acc: 95.4%(valid)
+Epoch: 36  | time in 3 minutes, 58 seconds
+	Loss: 0.0026(train)	|	Acc: 97.3%(train)
+	Loss: 0.0049(valid)	|	Acc: 95.5%(valid)
+Epoch: 37  | time in 4 minutes, 0 seconds
+	Loss: 0.0024(train)	|	Acc: 97.5%(train)
+	Loss: 0.0049(valid)	|	Acc: 95.5%(valid)
+Epoch: 38  | time in 4 minutes, 0 seconds
+	Loss: 0.0023(train)	|	Acc: 97.6%(train)
+	Loss: 0.0051(valid)	|	Acc: 95.5%(valid)
+Epoch: 39  | time in 4 minutes, 2 seconds
+	Loss: 0.0022(train)	|	Acc: 97.8%(train)
+	Loss: 0.0052(valid)	|	Acc: 95.5%(valid)
+Epoch: 40  | time in 4 minutes, 0 seconds
+	Loss: 0.0020(train)	|	Acc: 97.9%(train)
+	Loss: 0.0051(valid)	|	Acc: 95.4%(valid)
+Epoch: 41  | time in 4 minutes, 0 seconds
+	Loss: 0.0019(train)	|	Acc: 98.0%(train)
+	Loss: 0.0051(valid)	|	Acc: 95.5%(valid)
+Epoch: 42  | time in 4 minutes, 2 seconds
+	Loss: 0.0018(train)	|	Acc: 98.1%(train)
+	Loss: 0.0054(valid)	|	Acc: 95.6%(valid)
+Epoch: 43  | time in 4 minutes, 0 seconds
+	Loss: 0.0017(train)	|	Acc: 98.2%(train)
+	Loss: 0.0053(valid)	|	Acc: 95.5%(valid)
+Epoch: 44  | time in 4 minutes, 2 seconds
+	Loss: 0.0016(train)	|	Acc: 98.3%(train)
+	Loss: 0.0055(valid)	|	Acc: 95.5%(valid)
+Epoch: 45  | time in 3 minutes, 57 seconds
+	Loss: 0.0015(train)	|	Acc: 98.4%(train)
+	Loss: 0.0057(valid)	|	Acc: 95.5%(valid)
+Epoch: 46  | time in 4 minutes, 1 seconds
+	Loss: 0.0014(train)	|	Acc: 98.5%(train)
+	Loss: 0.0059(valid)	|	Acc: 95.6%(valid)
+Epoch: 47  | time in 3 minutes, 58 seconds
+	Loss: 0.0013(train)	|	Acc: 98.6%(train)
+	Loss: 0.0057(valid)	|	Acc: 95.5%(valid)
+Epoch: 48  | time in 3 minutes, 58 seconds
+	Loss: 0.0013(train)	|	Acc: 98.6%(train)
+	Loss: 0.0062(valid)	|	Acc: 95.5%(valid)
+Epoch: 49  | time in 4 minutes, 0 seconds
+	Loss: 0.0012(train)	|	Acc: 98.7%(train)
+	Loss: 0.0062(valid)	|	Acc: 95.6%(valid)
+Epoch: 50  | time in 4 minutes, 0 seconds
+	Loss: 0.0011(train)	|	Acc: 98.8%(train)
+	Loss: 0.0060(valid)	|	Acc: 95.5%(valid)
+Epoch: 51  | time in 4 minutes, 1 seconds
+	Loss: 0.0011(train)	|	Acc: 98.8%(train)
+	Loss: 0.0066(valid)	|	Acc: 95.6%(valid)
+Epoch: 52  | time in 4 minutes, 0 seconds
+	Loss: 0.0010(train)	|	Acc: 98.9%(train)
+	Loss: 0.0065(valid)	|	Acc: 95.6%(valid)
+Epoch: 53  | time in 4 minutes, 0 seconds
+	Loss: 0.0010(train)	|	Acc: 99.0%(train)
+	Loss: 0.0063(valid)	|	Acc: 95.7%(valid)
+Epoch: 54  | time in 4 minutes, 2 seconds
+	Loss: 0.0009(train)	|	Acc: 99.0%(train)
+	Loss: 0.0064(valid)	|	Acc: 95.6%(valid)
+Epoch: 55  | time in 4 minutes, 0 seconds
+	Loss: 0.0009(train)	|	Acc: 99.1%(train)
+	Loss: 0.0068(valid)	|	Acc: 95.6%(valid)
+Epoch: 56  | time in 4 minutes, 2 seconds
+	Loss: 0.0008(train)	|	Acc: 99.1%(train)
+	Loss: 0.0069(valid)	|	Acc: 95.5%(valid)
+Epoch: 57  | time in 3 minutes, 57 seconds
+	Loss: 0.0008(train)	|	Acc: 99.1%(train)
+	Loss: 0.0072(valid)	|	Acc: 95.6%(valid)
+Epoch: 58  | time in 4 minutes, 1 seconds
+	Loss: 0.0008(train)	|	Acc: 99.2%(train)
+	Loss: 0.0069(valid)	|	Acc: 95.6%(valid)
+Epoch: 59  | time in 3 minutes, 58 seconds
+	Loss: 0.0007(train)	|	Acc: 99.2%(train)
+	Loss: 0.0073(valid)	|	Acc: 95.5%(valid)
+Epoch: 60  | time in 3 minutes, 59 seconds
+	Loss: 0.0007(train)	|	Acc: 99.3%(train)
+	Loss: 0.0072(valid)	|	Acc: 95.6%(valid)
+Epoch: 61  | time in 4 minutes, 3 seconds
+	Loss: 0.0007(train)	|	Acc: 99.3%(train)
+	Loss: 0.0072(valid)	|	Acc: 95.6%(valid)
+Epoch: 62  | time in 4 minutes, 3 seconds
+	Loss: 0.0006(train)	|	Acc: 99.3%(train)
+	Loss: 0.0075(valid)	|	Acc: 95.5%(valid)
+Epoch: 63  | time in 4 minutes, 5 seconds
+	Loss: 0.0006(train)	|	Acc: 99.3%(train)
+	Loss: 0.0077(valid)	|	Acc: 95.6%(valid)
+Epoch: 64  | time in 4 minutes, 3 seconds
+	Loss: 0.0006(train)	|	Acc: 99.4%(train)
+	Loss: 0.0079(valid)	|	Acc: 95.6%(valid)
+Epoch: 65  | time in 4 minutes, 3 seconds
+	Loss: 0.0006(train)	|	Acc: 99.4%(train)
+	Loss: 0.0074(valid)	|	Acc: 95.6%(valid)
+Epoch: 66  | time in 4 minutes, 4 seconds
+	Loss: 0.0006(train)	|	Acc: 99.4%(train)
+	Loss: 0.0076(valid)	|	Acc: 95.6%(valid)
+Epoch: 67  | time in 4 minutes, 3 seconds
+	Loss: 0.0005(train)	|	Acc: 99.4%(train)
+	Loss: 0.0073(valid)	|	Acc: 95.7%(valid)
+Epoch: 68  | time in 4 minutes, 5 seconds
+	Loss: 0.0005(train)	|	Acc: 99.5%(train)
+	Loss: 0.0076(valid)	|	Acc: 95.7%(valid)
+Epoch: 69  | time in 4 minutes, 1 seconds
+	Loss: 0.0005(train)	|	Acc: 99.5%(train)
+	Loss: 0.0078(valid)	|	Acc: 95.6%(valid)
+Epoch: 70  | time in 4 minutes, 4 seconds
+	Loss: 0.0005(train)	|	Acc: 99.5%(train)
+	Loss: 0.0077(valid)	|	Acc: 95.7%(valid)
+Epoch: 71  | time in 4 minutes, 1 seconds
+	Loss: 0.0005(train)	|	Acc: 99.5%(train)
+	Loss: 0.0081(valid)	|	Acc: 95.6%(valid)
+Epoch: 72  | time in 4 minutes, 1 seconds
+	Loss: 0.0004(train)	|	Acc: 99.5%(train)
+	Loss: 0.0084(valid)	|	Acc: 95.6%(valid)
+Epoch: 73  | time in 4 minutes, 3 seconds
+	Loss: 0.0004(train)	|	Acc: 99.5%(train)
+	Loss: 0.0078(valid)	|	Acc: 95.7%(valid)
+Epoch: 74  | time in 4 minutes, 2 seconds
+	Loss: 0.0004(train)	|	Acc: 99.6%(train)
+	Loss: 0.0082(valid)	|	Acc: 95.5%(valid)
+Epoch: 75  | time in 4 minutes, 4 seconds
+	Loss: 0.0004(train)	|	Acc: 99.6%(train)
+	Loss: 0.0079(valid)	|	Acc: 95.6%(valid)
+Epoch: 76  | time in 4 minutes, 3 seconds
+	Loss: 0.0004(train)	|	Acc: 99.6%(train)
+	Loss: 0.0082(valid)	|	Acc: 95.6%(valid)
+Epoch: 77  | time in 4 minutes, 3 seconds
+	Loss: 0.0004(train)	|	Acc: 99.6%(train)
+	Loss: 0.0083(valid)	|	Acc: 95.6%(valid)
+Epoch: 78  | time in 4 minutes, 4 seconds
+	Loss: 0.0004(train)	|	Acc: 99.6%(train)
+	Loss: 0.0080(valid)	|	Acc: 95.7%(valid)
+Epoch: 79  | time in 4 minutes, 3 seconds
+	Loss: 0.0004(train)	|	Acc: 99.6%(train)
+	Loss: 0.0083(valid)	|	Acc: 95.5%(valid)
+Epoch: 80  | time in 4 minutes, 5 seconds
+	Loss: 0.0004(train)	|	Acc: 99.6%(train)
+	Loss: 0.0082(valid)	|	Acc: 95.8%(valid)
+Epoch: 81  | time in 4 minutes, 0 seconds
+	Loss: 0.0004(train)	|	Acc: 99.6%(train)
+	Loss: 0.0082(valid)	|	Acc: 95.6%(valid)
+Epoch: 82  | time in 4 minutes, 3 seconds
+	Loss: 0.0004(train)	|	Acc: 99.6%(train)
+	Loss: 0.0084(valid)	|	Acc: 95.6%(valid)
+Epoch: 83  | time in 4 minutes, 1 seconds
+	Loss: 0.0004(train)	|	Acc: 99.6%(train)
+	Loss: 0.0082(valid)	|	Acc: 95.7%(valid)
+Epoch: 84  | time in 4 minutes, 1 seconds
+	Loss: 0.0004(train)	|	Acc: 99.6%(train)
+	Loss: 0.0082(valid)	|	Acc: 95.7%(valid)
+Epoch: 85  | time in 4 minutes, 2 seconds
+	Loss: 0.0004(train)	|	Acc: 99.6%(train)
+	Loss: 0.0083(valid)	|	Acc: 95.6%(valid)
+Epoch: 86  | time in 4 minutes, 2 seconds
+	Loss: 0.0003(train)	|	Acc: 99.6%(train)
+	Loss: 0.0085(valid)	|	Acc: 95.7%(valid)
+Epoch: 87  | time in 4 minutes, 5 seconds
+	Loss: 0.0003(train)	|	Acc: 99.6%(train)
+	Loss: 0.0085(valid)	|	Acc: 95.7%(valid)
+Epoch: 88  | time in 4 minutes, 3 seconds
+	Loss: 0.0003(train)	|	Acc: 99.7%(train)
+	Loss: 0.0088(valid)	|	Acc: 95.6%(valid)
+Epoch: 89  | time in 4 minutes, 3 seconds
+	Loss: 0.0003(train)	|	Acc: 99.7%(train)
+	Loss: 0.0082(valid)	|	Acc: 95.7%(valid)
+Epoch: 90  | time in 4 minutes, 5 seconds
+	Loss: 0.0003(train)	|	Acc: 99.7%(train)
+	Loss: 0.0087(valid)	|	Acc: 95.7%(valid)
+Epoch: 91  | time in 4 minutes, 3 seconds
+	Loss: 0.0003(train)	|	Acc: 99.7%(train)
+	Loss: 0.0083(valid)	|	Acc: 95.7%(valid)
+Epoch: 92  | time in 4 minutes, 6 seconds
+	Loss: 0.0003(train)	|	Acc: 99.7%(train)
+	Loss: 0.0086(valid)	|	Acc: 95.6%(valid)
+Epoch: 93  | time in 4 minutes, 1 seconds
+	Loss: 0.0003(train)	|	Acc: 99.7%(train)
+	Loss: 0.0082(valid)	|	Acc: 95.6%(valid)
+Epoch: 94  | time in 4 minutes, 4 seconds
+	Loss: 0.0003(train)	|	Acc: 99.7%(train)
+	Loss: 0.0084(valid)	|	Acc: 95.7%(valid)
+Epoch: 95  | time in 4 minutes, 2 seconds
+	Loss: 0.0003(train)	|	Acc: 99.7%(train)
+	Loss: 0.0088(valid)	|	Acc: 95.6%(valid)
+Epoch: 96  | time in 4 minutes, 1 seconds
+	Loss: 0.0003(train)	|	Acc: 99.7%(train)
+	Loss: 0.0085(valid)	|	Acc: 95.7%(valid)
+Epoch: 97  | time in 4 minutes, 3 seconds
+	Loss: 0.0003(train)	|	Acc: 99.7%(train)
+	Loss: 0.0088(valid)	|	Acc: 95.7%(valid)
+Epoch: 98  | time in 4 minutes, 2 seconds
+	Loss: 0.0003(train)	|	Acc: 99.7%(train)
+	Loss: 0.0089(valid)	|	Acc: 95.6%(valid)
+Epoch: 99  | time in 4 minutes, 4 seconds
+	Loss: 0.0003(train)	|	Acc: 99.7%(train)
+	Loss: 0.0083(valid)	|	Acc: 95.7%(valid)
+Epoch: 100  | time in 4 minutes, 3 seconds
+	Loss: 0.0003(train)	|	Acc: 99.7%(train)
+	Loss: 0.0088(valid)	|	Acc: 95.7%(valid)
+epoch:100 best_valid_acc:0.9567018072289156
+test set loss: 0.008205195483058668
+test set acc: 0.9579224689499436
+train.sh: line 5:  6446 Killed                  CUDA_VISIBLE_DEVICES=3 python main.py --lr 0.0001 --batch_size 32 --epoch 100 --seed 1992 --embedding_dim 300 --embedding_droprate 0.5 --sequence_len 64 --rnn_droprate 0.5 --train ../data/train.txt --dev ../data/dev.txt --test ../data/test.txt --mode train --output_vocab_label ./model/class.txt --output_vocab_word ./model/vocab.txt --rnn_cell_hidden 1000 --rnn_cell_type LSTM --birnn True --num_layers 1
+train.sh: line 5: 24573 Killed                  CUDA_VISIBLE_DEVICES=3 python main.py --lr 0.00005 --batch_size 32 --epoch 100 --seed 1992 --embedding_dim 300 --embedding_droprate 0.5 --sequence_len 64 --rnn_droprate 0.5 --train ../data/train.txt --dev ../data/dev.txt --test ../data/test.txt --mode train --output_vocab_label ./model/class.txt --output_vocab_word ./model/vocab.txt --rnn_cell_hidden 1000 --rnn_cell_type LSTM --birnn True --num_layers 1
+train.sh: line 5:  7158 Killed                  CUDA_VISIBLE_DEVICES=3 python main.py --lr 0.00003 --batch_size 32 --epoch 100 --seed 1992 --embedding_dim 300 --embedding_droprate 0.5 --sequence_len 64 --rnn_droprate 0.5 --train ../data/train.txt --dev ../data/dev.txt --test ../data/test.txt --mode train --output_vocab_label ./model/class.txt --output_vocab_word ./model/vocab.txt --rnn_cell_hidden 1000 --rnn_cell_type LSTM --birnn True --num_layers 1
+cuda
+--------------------------------------------------------------------------------------------------
+      Layer (type)                                   Output Shape         Param #     Tr. Param #
+==================================================================================================
+       Embedding-1                                  [32, 64, 300]       1,441,500       1,441,500
+         Dropout-2                                  [32, 64, 300]               0               0
+            LSTM-3     [32, 64, 1000], [2, 32, 500], [2, 32, 500]       3,208,000       3,208,000
+         Dropout-4                                  [32, 1, 1000]               0               0
+          Linear-5                                    [32, 1, 27]          27,027          27,027
+==================================================================================================
+Total params: 4,676,527
+Trainable params: 4,676,527
+Non-trainable params: 0
+--------------------------------------------------------------------------------------------------
+Epoch: 1  | time in 5 minutes, 56 seconds
+	Loss: 0.0224(train)	|	Acc: 80.3%(train)
+	Loss: 0.0128(valid)	|	Acc: 88.1%(valid)
+Epoch: 2  | time in 5 minutes, 59 seconds
+	Loss: 0.0107(train)	|	Acc: 89.8%(train)
+	Loss: 0.0099(valid)	|	Acc: 90.3%(valid)
+Epoch: 3  | time in 5 minutes, 57 seconds
+	Loss: 0.0084(train)	|	Acc: 91.7%(train)
+	Loss: 0.0079(valid)	|	Acc: 92.2%(valid)
+Epoch: 4  | time in 6 minutes, 1 seconds
+	Loss: 0.0073(train)	|	Acc: 92.8%(train)
+	Loss: 0.0071(valid)	|	Acc: 93.0%(valid)
+Epoch: 5  | time in 6 minutes, 0 seconds
+	Loss: 0.0065(train)	|	Acc: 93.5%(train)
+	Loss: 0.0067(valid)	|	Acc: 93.4%(valid)
+Epoch: 6  | time in 6 minutes, 1 seconds
+	Loss: 0.0059(train)	|	Acc: 94.0%(train)
+	Loss: 0.0064(valid)	|	Acc: 93.5%(valid)
+Epoch: 7  | time in 5 minutes, 55 seconds
+	Loss: 0.0055(train)	|	Acc: 94.3%(train)
+	Loss: 0.0059(valid)	|	Acc: 94.0%(valid)
+Epoch: 8  | time in 5 minutes, 58 seconds
+	Loss: 0.0051(train)	|	Acc: 94.7%(train)
+	Loss: 0.0058(valid)	|	Acc: 94.1%(valid)
+Epoch: 9  | time in 5 minutes, 50 seconds
+	Loss: 0.0049(train)	|	Acc: 94.9%(train)
+	Loss: 0.0056(valid)	|	Acc: 94.4%(valid)
+Epoch: 10  | time in 5 minutes, 53 seconds
+	Loss: 0.0046(train)	|	Acc: 95.1%(train)
+	Loss: 0.0054(valid)	|	Acc: 94.4%(valid)
+Epoch: 11  | time in 5 minutes, 53 seconds
+	Loss: 0.0044(train)	|	Acc: 95.4%(train)
+	Loss: 0.0052(valid)	|	Acc: 94.7%(valid)
+Epoch: 12  | time in 5 minutes, 59 seconds
+	Loss: 0.0042(train)	|	Acc: 95.5%(train)
+	Loss: 0.0051(valid)	|	Acc: 94.8%(valid)
+Epoch: 13  | time in 5 minutes, 54 seconds
+	Loss: 0.0040(train)	|	Acc: 95.7%(train)
+	Loss: 0.0050(valid)	|	Acc: 94.8%(valid)
+Epoch: 14  | time in 6 minutes, 1 seconds
+	Loss: 0.0039(train)	|	Acc: 95.9%(train)
+	Loss: 0.0050(valid)	|	Acc: 94.9%(valid)
+Epoch: 15  | time in 5 minutes, 48 seconds
+	Loss: 0.0038(train)	|	Acc: 96.0%(train)
+	Loss: 0.0049(valid)	|	Acc: 95.1%(valid)
+Epoch: 16  | time in 5 minutes, 55 seconds
+	Loss: 0.0036(train)	|	Acc: 96.1%(train)
+	Loss: 0.0048(valid)	|	Acc: 95.0%(valid)
+Epoch: 17  | time in 5 minutes, 56 seconds
+	Loss: 0.0035(train)	|	Acc: 96.2%(train)
+	Loss: 0.0048(valid)	|	Acc: 95.1%(valid)
+Epoch: 18  | time in 5 minutes, 56 seconds
+	Loss: 0.0034(train)	|	Acc: 96.3%(train)
+	Loss: 0.0049(valid)	|	Acc: 95.1%(valid)
+Epoch: 19  | time in 5 minutes, 51 seconds
+	Loss: 0.0033(train)	|	Acc: 96.4%(train)
+	Loss: 0.0048(valid)	|	Acc: 95.2%(valid)
+Epoch: 20  | time in 5 minutes, 58 seconds
+	Loss: 0.0032(train)	|	Acc: 96.5%(train)
+	Loss: 0.0048(valid)	|	Acc: 95.2%(valid)
+Epoch: 21  | time in 5 minutes, 55 seconds
+	Loss: 0.0031(train)	|	Acc: 96.7%(train)
+	Loss: 0.0046(valid)	|	Acc: 95.3%(valid)
+Epoch: 22  | time in 5 minutes, 52 seconds
+	Loss: 0.0030(train)	|	Acc: 96.7%(train)
+	Loss: 0.0047(valid)	|	Acc: 95.4%(valid)
+Epoch: 23  | time in 2 minutes, 35 seconds
+	Loss: 0.0029(train)	|	Acc: 96.8%(train)
+	Loss: 0.0047(valid)	|	Acc: 95.2%(valid)
+Epoch: 24  | time in 2 minutes, 35 seconds
+	Loss: 0.0029(train)	|	Acc: 96.9%(train)
+	Loss: 0.0046(valid)	|	Acc: 95.4%(valid)
+Epoch: 25  | time in 2 minutes, 35 seconds
+	Loss: 0.0028(train)	|	Acc: 96.9%(train)
+	Loss: 0.0047(valid)	|	Acc: 95.5%(valid)
+Epoch: 26  | time in 2 minutes, 34 seconds
+	Loss: 0.0027(train)	|	Acc: 97.1%(train)
+	Loss: 0.0046(valid)	|	Acc: 95.4%(valid)
+Epoch: 27  | time in 2 minutes, 34 seconds
+	Loss: 0.0027(train)	|	Acc: 97.1%(train)
+	Loss: 0.0047(valid)	|	Acc: 95.5%(valid)
+Epoch: 28  | time in 2 minutes, 35 seconds
+	Loss: 0.0026(train)	|	Acc: 97.1%(train)
+	Loss: 0.0046(valid)	|	Acc: 95.6%(valid)
+Epoch: 29  | time in 2 minutes, 35 seconds
+	Loss: 0.0025(train)	|	Acc: 97.2%(train)
+	Loss: 0.0047(valid)	|	Acc: 95.4%(valid)
+Epoch: 30  | time in 2 minutes, 35 seconds
+	Loss: 0.0024(train)	|	Acc: 97.3%(train)
+	Loss: 0.0046(valid)	|	Acc: 95.6%(valid)
+Epoch: 31  | time in 2 minutes, 34 seconds
+	Loss: 0.0024(train)	|	Acc: 97.4%(train)
+	Loss: 0.0046(valid)	|	Acc: 95.6%(valid)
+Epoch: 32  | time in 2 minutes, 36 seconds
+	Loss: 0.0023(train)	|	Acc: 97.4%(train)
+	Loss: 0.0047(valid)	|	Acc: 95.6%(valid)
+Epoch: 33  | time in 2 minutes, 34 seconds
+	Loss: 0.0023(train)	|	Acc: 97.5%(train)
+	Loss: 0.0048(valid)	|	Acc: 95.6%(valid)
+Epoch: 34  | time in 2 minutes, 34 seconds
+	Loss: 0.0022(train)	|	Acc: 97.5%(train)
+	Loss: 0.0046(valid)	|	Acc: 95.7%(valid)
+Epoch: 35  | time in 2 minutes, 34 seconds
+	Loss: 0.0022(train)	|	Acc: 97.6%(train)
+	Loss: 0.0047(valid)	|	Acc: 95.4%(valid)
+Epoch: 36  | time in 2 minutes, 34 seconds
+	Loss: 0.0022(train)	|	Acc: 97.6%(train)
+	Loss: 0.0047(valid)	|	Acc: 95.5%(valid)
+Epoch: 37  | time in 2 minutes, 36 seconds
+	Loss: 0.0021(train)	|	Acc: 97.7%(train)
+	Loss: 0.0047(valid)	|	Acc: 95.6%(valid)
+Epoch: 38  | time in 2 minutes, 34 seconds
+	Loss: 0.0021(train)	|	Acc: 97.7%(train)
+	Loss: 0.0048(valid)	|	Acc: 95.6%(valid)
+Epoch: 39  | time in 2 minutes, 34 seconds
+	Loss: 0.0021(train)	|	Acc: 97.7%(train)
+	Loss: 0.0047(valid)	|	Acc: 95.8%(valid)
+Epoch: 40  | time in 2 minutes, 34 seconds
+	Loss: 0.0020(train)	|	Acc: 97.8%(train)
+	Loss: 0.0048(valid)	|	Acc: 95.5%(valid)
+Epoch: 41  | time in 2 minutes, 35 seconds
+	Loss: 0.0020(train)	|	Acc: 97.8%(train)
+	Loss: 0.0047(valid)	|	Acc: 95.6%(valid)
+Epoch: 42  | time in 2 minutes, 35 seconds
+	Loss: 0.0019(train)	|	Acc: 97.8%(train)
+	Loss: 0.0048(valid)	|	Acc: 95.6%(valid)
+Epoch: 43  | time in 2 minutes, 35 seconds
+	Loss: 0.0019(train)	|	Acc: 97.9%(train)
+	Loss: 0.0049(valid)	|	Acc: 95.7%(valid)
+Epoch: 44  | time in 2 minutes, 34 seconds
+	Loss: 0.0019(train)	|	Acc: 97.9%(train)
+	Loss: 0.0048(valid)	|	Acc: 95.7%(valid)
+Epoch: 45  | time in 2 minutes, 34 seconds
+	Loss: 0.0018(train)	|	Acc: 98.0%(train)
+	Loss: 0.0048(valid)	|	Acc: 95.7%(valid)
+Epoch: 46  | time in 2 minutes, 36 seconds
+	Loss: 0.0018(train)	|	Acc: 98.0%(train)
+	Loss: 0.0049(valid)	|	Acc: 95.8%(valid)
+Epoch: 47  | time in 2 minutes, 35 seconds
+	Loss: 0.0017(train)	|	Acc: 98.1%(train)
+	Loss: 0.0049(valid)	|	Acc: 95.7%(valid)
+Epoch: 48  | time in 2 minutes, 34 seconds
+	Loss: 0.0017(train)	|	Acc: 98.1%(train)
+	Loss: 0.0050(valid)	|	Acc: 95.7%(valid)
+Epoch: 49  | time in 2 minutes, 35 seconds
+	Loss: 0.0017(train)	|	Acc: 98.1%(train)
+	Loss: 0.0048(valid)	|	Acc: 95.8%(valid)
+Epoch: 50  | time in 2 minutes, 35 seconds
+	Loss: 0.0016(train)	|	Acc: 98.2%(train)
+	Loss: 0.0048(valid)	|	Acc: 95.7%(valid)
+Epoch: 51  | time in 2 minutes, 36 seconds
+	Loss: 0.0016(train)	|	Acc: 98.2%(train)
+	Loss: 0.0049(valid)	|	Acc: 95.8%(valid)
+Epoch: 52  | time in 2 minutes, 34 seconds
+	Loss: 0.0016(train)	|	Acc: 98.2%(train)
+	Loss: 0.0049(valid)	|	Acc: 95.9%(valid)
+Epoch: 53  | time in 2 minutes, 34 seconds
+	Loss: 0.0015(train)	|	Acc: 98.3%(train)
+	Loss: 0.0050(valid)	|	Acc: 95.7%(valid)
+Epoch: 54  | time in 2 minutes, 36 seconds
+	Loss: 0.0015(train)	|	Acc: 98.3%(train)
+	Loss: 0.0051(valid)	|	Acc: 95.7%(valid)
+Epoch: 55  | time in 2 minutes, 34 seconds
+	Loss: 0.0015(train)	|	Acc: 98.3%(train)
+	Loss: 0.0053(valid)	|	Acc: 95.6%(valid)
+Epoch: 56  | time in 2 minutes, 37 seconds
+	Loss: 0.0015(train)	|	Acc: 98.3%(train)
+	Loss: 0.0052(valid)	|	Acc: 95.6%(valid)
+Epoch: 57  | time in 2 minutes, 35 seconds
+	Loss: 0.0014(train)	|	Acc: 98.4%(train)
+	Loss: 0.0052(valid)	|	Acc: 95.8%(valid)
+Epoch: 58  | time in 2 minutes, 36 seconds
+	Loss: 0.0014(train)	|	Acc: 98.4%(train)
+	Loss: 0.0051(valid)	|	Acc: 95.7%(valid)
+Epoch: 59  | time in 2 minutes, 34 seconds
+	Loss: 0.0014(train)	|	Acc: 98.4%(train)
+	Loss: 0.0051(valid)	|	Acc: 95.7%(valid)
+Epoch: 60  | time in 2 minutes, 35 seconds
+	Loss: 0.0014(train)	|	Acc: 98.4%(train)
+	Loss: 0.0052(valid)	|	Acc: 95.7%(valid)
+Epoch: 61  | time in 2 minutes, 34 seconds
+	Loss: 0.0014(train)	|	Acc: 98.5%(train)
+	Loss: 0.0053(valid)	|	Acc: 95.7%(valid)
+Epoch: 62  | time in 2 minutes, 34 seconds
+	Loss: 0.0013(train)	|	Acc: 98.5%(train)
+	Loss: 0.0053(valid)	|	Acc: 95.6%(valid)
+Epoch: 63  | time in 2 minutes, 35 seconds
+	Loss: 0.0013(train)	|	Acc: 98.5%(train)
+	Loss: 0.0051(valid)	|	Acc: 95.7%(valid)
+Epoch: 64  | time in 2 minutes, 34 seconds
+	Loss: 0.0013(train)	|	Acc: 98.5%(train)
+	Loss: 0.0052(valid)	|	Acc: 95.8%(valid)
+Epoch: 65  | time in 2 minutes, 35 seconds
+	Loss: 0.0013(train)	|	Acc: 98.5%(train)
+	Loss: 0.0052(valid)	|	Acc: 95.8%(valid)
+Epoch: 66  | time in 2 minutes, 34 seconds
+	Loss: 0.0012(train)	|	Acc: 98.6%(train)
+	Loss: 0.0052(valid)	|	Acc: 95.9%(valid)
+Epoch: 67  | time in 2 minutes, 35 seconds
+	Loss: 0.0012(train)	|	Acc: 98.6%(train)
+	Loss: 0.0053(valid)	|	Acc: 95.7%(valid)
+Epoch: 68  | time in 2 minutes, 35 seconds
+	Loss: 0.0012(train)	|	Acc: 98.7%(train)
+	Loss: 0.0057(valid)	|	Acc: 95.7%(valid)
+Epoch: 69  | time in 2 minutes, 34 seconds
+	Loss: 0.0012(train)	|	Acc: 98.7%(train)
+	Loss: 0.0053(valid)	|	Acc: 95.7%(valid)
+Epoch: 70  | time in 2 minutes, 34 seconds
+	Loss: 0.0012(train)	|	Acc: 98.6%(train)
+	Loss: 0.0054(valid)	|	Acc: 95.7%(valid)
+Epoch: 71  | time in 2 minutes, 37 seconds
+	Loss: 0.0012(train)	|	Acc: 98.7%(train)
+	Loss: 0.0055(valid)	|	Acc: 95.7%(valid)
+Epoch: 72  | time in 2 minutes, 35 seconds
+	Loss: 0.0011(train)	|	Acc: 98.7%(train)
+	Loss: 0.0053(valid)	|	Acc: 95.8%(valid)
+Epoch: 73  | time in 2 minutes, 35 seconds
+	Loss: 0.0011(train)	|	Acc: 98.7%(train)
+	Loss: 0.0054(valid)	|	Acc: 95.9%(valid)
+Epoch: 74  | time in 2 minutes, 37 seconds
+	Loss: 0.0011(train)	|	Acc: 98.7%(train)
+	Loss: 0.0053(valid)	|	Acc: 95.9%(valid)
+Epoch: 75  | time in 2 minutes, 34 seconds
+	Loss: 0.0011(train)	|	Acc: 98.8%(train)
+	Loss: 0.0054(valid)	|	Acc: 95.8%(valid)
+Epoch: 76  | time in 2 minutes, 35 seconds
+	Loss: 0.0011(train)	|	Acc: 98.8%(train)
+	Loss: 0.0054(valid)	|	Acc: 95.9%(valid)
+Epoch: 77  | time in 2 minutes, 35 seconds
+	Loss: 0.0011(train)	|	Acc: 98.8%(train)
+	Loss: 0.0054(valid)	|	Acc: 95.9%(valid)
+Epoch: 78  | time in 2 minutes, 36 seconds
+	Loss: 0.0011(train)	|	Acc: 98.8%(train)
+	Loss: 0.0056(valid)	|	Acc: 95.8%(valid)
+Epoch: 79  | time in 2 minutes, 35 seconds
+	Loss: 0.0010(train)	|	Acc: 98.8%(train)
+	Loss: 0.0056(valid)	|	Acc: 95.8%(valid)
+Epoch: 80  | time in 2 minutes, 35 seconds
+	Loss: 0.0010(train)	|	Acc: 98.8%(train)
+	Loss: 0.0056(valid)	|	Acc: 95.9%(valid)
+Epoch: 81  | time in 2 minutes, 35 seconds
+	Loss: 0.0010(train)	|	Acc: 98.9%(train)
+	Loss: 0.0055(valid)	|	Acc: 95.9%(valid)
+Epoch: 82  | time in 2 minutes, 34 seconds
+	Loss: 0.0010(train)	|	Acc: 98.9%(train)
+	Loss: 0.0057(valid)	|	Acc: 95.8%(valid)
+Epoch: 83  | time in 2 minutes, 35 seconds
+	Loss: 0.0010(train)	|	Acc: 98.9%(train)
+	Loss: 0.0055(valid)	|	Acc: 95.8%(valid)
+Epoch: 84  | time in 2 minutes, 35 seconds
+	Loss: 0.0010(train)	|	Acc: 98.9%(train)
+	Loss: 0.0058(valid)	|	Acc: 95.8%(valid)
+Epoch: 85  | time in 2 minutes, 35 seconds
+	Loss: 0.0010(train)	|	Acc: 98.9%(train)
+	Loss: 0.0058(valid)	|	Acc: 95.8%(valid)
+Epoch: 86  | time in 2 minutes, 36 seconds
+	Loss: 0.0010(train)	|	Acc: 98.9%(train)
+	Loss: 0.0058(valid)	|	Acc: 95.8%(valid)
+Epoch: 87  | time in 2 minutes, 36 seconds
+	Loss: 0.0009(train)	|	Acc: 98.9%(train)
+	Loss: 0.0059(valid)	|	Acc: 95.6%(valid)
+Epoch: 88  | time in 2 minutes, 34 seconds
+	Loss: 0.0009(train)	|	Acc: 98.9%(train)
+	Loss: 0.0058(valid)	|	Acc: 95.7%(valid)
+Epoch: 89  | time in 2 minutes, 36 seconds
+	Loss: 0.0009(train)	|	Acc: 99.0%(train)
+	Loss: 0.0058(valid)	|	Acc: 95.8%(valid)
+Epoch: 90  | time in 2 minutes, 35 seconds
+	Loss: 0.0009(train)	|	Acc: 99.0%(train)
+	Loss: 0.0056(valid)	|	Acc: 95.9%(valid)
+Epoch: 91  | time in 2 minutes, 36 seconds
+	Loss: 0.0009(train)	|	Acc: 99.0%(train)
+	Loss: 0.0058(valid)	|	Acc: 95.8%(valid)
+Epoch: 92  | time in 2 minutes, 36 seconds
+	Loss: 0.0009(train)	|	Acc: 99.0%(train)
+	Loss: 0.0058(valid)	|	Acc: 95.8%(valid)
+Epoch: 93  | time in 2 minutes, 34 seconds
+	Loss: 0.0009(train)	|	Acc: 99.0%(train)
+	Loss: 0.0058(valid)	|	Acc: 95.7%(valid)
+Epoch: 94  | time in 2 minutes, 36 seconds
+	Loss: 0.0009(train)	|	Acc: 99.0%(train)
+	Loss: 0.0058(valid)	|	Acc: 95.7%(valid)
+Epoch: 95  | time in 2 minutes, 35 seconds
+	Loss: 0.0009(train)	|	Acc: 99.0%(train)
+	Loss: 0.0060(valid)	|	Acc: 95.8%(valid)
+Epoch: 96  | time in 2 minutes, 37 seconds
+	Loss: 0.0008(train)	|	Acc: 99.1%(train)
+	Loss: 0.0059(valid)	|	Acc: 95.7%(valid)
+Epoch: 97  | time in 2 minutes, 34 seconds
+	Loss: 0.0009(train)	|	Acc: 99.0%(train)
+	Loss: 0.0058(valid)	|	Acc: 95.9%(valid)
+Epoch: 98  | time in 2 minutes, 35 seconds
+	Loss: 0.0008(train)	|	Acc: 99.0%(train)
+	Loss: 0.0058(valid)	|	Acc: 95.9%(valid)
+Epoch: 99  | time in 2 minutes, 36 seconds
+	Loss: 0.0008(train)	|	Acc: 99.1%(train)
+	Loss: 0.0059(valid)	|	Acc: 95.9%(valid)
+Epoch: 100  | time in 2 minutes, 35 seconds
+	Loss: 0.0008(train)	|	Acc: 99.1%(train)
+	Loss: 0.0058(valid)	|	Acc: 95.8%(valid)
+epoch:100 best_valid_acc:0.9581701807228916
+test set loss: 0.005833622785078311
+test set acc: 0.9582611968385397
+train.sh: line 5:  7496 Killed                  CUDA_VISIBLE_DEVICES=2,3 python main.py --lr 0.00003 --batch_size 32 --epoch 100 --seed 1992 --embedding_dim 300 --embedding_droprate 0.5 --sequence_len 64 --rnn_droprate 0.5 --train ../data/train.txt --dev ../data/dev.txt --test ../data/test.txt --mode train --output_vocab_label ./model/class.txt --output_vocab_word ./model/vocab.txt --rnn_cell_hidden 1000 --rnn_cell_type LSTM --birnn True --num_layers 1
+ERROR:tensorflow:File /home/work/liushaohua/text_classification/rnn/tensorboard/Loss_train/events.out.tfevents.1590290086.gpu-0.8151.1 updated even though the current file is /home/work/liushaohua/text_classification/rnn/tensorboard/Loss_train/events.out.tfevents.1590290222.gpu-0.8616.1
+ERROR:tensorflow:File /home/work/liushaohua/text_classification/rnn/tensorboard/Acc_train/events.out.tfevents.1590290086.gpu-0.8151.3 updated even though the current file is /home/work/liushaohua/text_classification/rnn/tensorboard/Acc_train/events.out.tfevents.1590290222.gpu-0.8616.3
+ERROR:tensorflow:File /home/work/liushaohua/text_classification/rnn/tensorboard/Loss_valid/events.out.tfevents.1590290086.gpu-0.8151.2 updated even though the current file is /home/work/liushaohua/text_classification/rnn/tensorboard/Loss_valid/events.out.tfevents.1590290222.gpu-0.8616.2
+ERROR:tensorflow:File /home/work/liushaohua/text_classification/rnn/tensorboard/Acc_valid/events.out.tfevents.1590290086.gpu-0.8151.4 updated even though the current file is /home/work/liushaohua/text_classification/rnn/tensorboard/Acc_valid/events.out.tfevents.1590290222.gpu-0.8616.4
+train.sh: line 9:  8151 Killed                  CUDA_VISIBLE_DEVICES=2,3 python main.py --lr 0.00005 --batch_size 32 --epoch 100 --seed 1992 --embedding_dim 300 --embedding_droprate 0.5 --sequence_len 64 --rnn_droprate 0.5 --train ../data/train.txt --dev ../data/dev.txt --test ../data/test.txt --mode train --output_vocab_label ./model/class.txt --output_vocab_word ./model/vocab.txt --rnn_cell_hidden 500 --rnn_cell_type LSTM --birnn True --num_layers 2
+train.sh: line 10: ers: command not found
+train.sh: line 8:  8616 Killed                  CUDA_VISIBLE_DEVICES=2,3 python main.py --lr 0.00005 --batch_size 32 --epoch 100 --seed 1992 --embedding_dim 300 --embedding_droprate 0.5 --sequence_len 64 --rnn_droprate 0.5 --train ../data/train.txt --dev ../data/dev.txt --test ../data/test.txt --mode train --output_vocab_label ./model/class.txt --output_vocab_word ./model/vocab.txt --rnn_cell_hidden 300 --rnn_cell_type LSTM --birnn True --num_layers 2
+train.sh: line 12: 43761 Killed                  CUDA_VISIBLE_DEVICES=2,3 python main.py --lr 0.00005 --batch_size 32 --epoch 100 --seed 1992 --embedding_dim 300 --embedding_droprate 0.5 --sequence_len 64 --rnn_droprate 0.5 --train ../data/train.txt --dev ../data/dev.txt --test ../data/test.txt --mode train --output_vocab_label ./model/class.txt --output_vocab_word ./model/vocab.txt --rnn_cell_hidden 1000 --rnn_cell_type GRU --birnn False --num_layers 1
+train.sh: line 11: 43843 Killed                  CUDA_VISIBLE_DEVICES=2,3 python main.py --lr 0.00005 --batch_size 32 --epoch 100 --seed 1992 --embedding_dim 300 --embedding_droprate 0.5 --sequence_len 64 --rnn_droprate 0.5 --train ../data/train.txt --dev ../data/dev.txt --test ../data/test.txt --mode train --output_vocab_label ./model/class.txt --output_vocab_word ./model/vocab.txt --rnn_cell_hidden 1000 --rnn_cell_type GRU --birnn False --num_layers 1
+ERROR:tensorflow:Unable to get size of /home/work/liushaohua/text_classification/rnn/tensorboard/events.out.tfevents.1590289790.gpu-0.8616.0: /home/work/liushaohua/text_classification/rnn/tensorboard/events.out.tfevents.1590289790.gpu-0.8616.0
+WARNING:tensorflow:Found more than one graph event per run, or there was a metagraph containing a graph_def, as well as one or more graph events.  Overwriting the graph with the newest event.
+WARNING:tensorflow:Found more than one "run metadata" event with tag step1. Overwriting it with the newest event.
+WARNING:tensorflow:Deleting accumulator 'Acc_train'
+WARNING:tensorflow:Deleting accumulator 'Loss_valid'
+WARNING:tensorflow:Deleting accumulator 'Loss_train'
+WARNING:tensorflow:Deleting accumulator 'Acc_valid'
+ERROR:tensorflow:Unable to get size of /home/work/liushaohua/text_classification/rnn/tensorboard/events.out.tfevents.1590313071.gpu-0.43843.0: /home/work/liushaohua/text_classification/rnn/tensorboard/events.out.tfevents.1590313071.gpu-0.43843.0
+WARNING:tensorflow:Found more than one graph event per run, or there was a metagraph containing a graph_def, as well as one or more graph events.  Overwriting the graph with the newest event.
+WARNING:tensorflow:Found more than one "run metadata" event with tag step1. Overwriting it with the newest event.
+cuda
+-------------------------------------------------------------------------------------
+      Layer (type)                      Output Shape         Param #     Tr. Param #
+=====================================================================================
+       Embedding-1                     [32, 64, 300]       1,441,500       1,441,500
+         Dropout-2                     [32, 64, 300]               0               0
+             GRU-3     [32, 64, 1000], [1, 32, 1000]       3,906,000       3,906,000
+         Dropout-4                     [32, 1, 1000]               0               0
+          Linear-5                       [32, 1, 27]          27,027          27,027
+=====================================================================================
+Total params: 5,374,527
+Trainable params: 5,374,527
+Non-trainable params: 0
+-------------------------------------------------------------------------------------
+Epoch: 1  | time in 3 minutes, 30 seconds
+	Loss: 0.0564(train)	|	Acc: 51.8%(train)
+	Loss: 0.0432(valid)	|	Acc: 60.9%(valid)
+Epoch: 2  | time in 3 minutes, 27 seconds
+	Loss: 0.0310(train)	|	Acc: 70.7%(train)
+	Loss: 0.0215(valid)	|	Acc: 79.8%(valid)
+Epoch: 3  | time in 3 minutes, 28 seconds
+	Loss: 0.0166(train)	|	Acc: 84.5%(train)
+	Loss: 0.0123(valid)	|	Acc: 88.7%(valid)
+Epoch: 4  | time in 3 minutes, 24 seconds
+	Loss: 0.0103(train)	|	Acc: 90.2%(train)
+	Loss: 0.0090(valid)	|	Acc: 91.5%(valid)
+Epoch: 5  | time in 3 minutes, 28 seconds
+	Loss: 0.0080(train)	|	Acc: 92.3%(train)
+	Loss: 0.0077(valid)	|	Acc: 92.2%(valid)
+Epoch: 6  | time in 3 minutes, 28 seconds
+	Loss: 0.0067(train)	|	Acc: 93.3%(train)
+	Loss: 0.0065(valid)	|	Acc: 93.6%(valid)
+Epoch: 7  | time in 3 minutes, 28 seconds
+	Loss: 0.0059(train)	|	Acc: 94.0%(train)
+	Loss: 0.0062(valid)	|	Acc: 93.9%(valid)
+Epoch: 8  | time in 3 minutes, 25 seconds
+	Loss: 0.0053(train)	|	Acc: 94.6%(train)
+	Loss: 0.0058(valid)	|	Acc: 94.2%(valid)
+Epoch: 9  | time in 3 minutes, 27 seconds
+	Loss: 0.0049(train)	|	Acc: 95.0%(train)
+	Loss: 0.0056(valid)	|	Acc: 94.4%(valid)
+Epoch: 10  | time in 3 minutes, 29 seconds
+	Loss: 0.0045(train)	|	Acc: 95.3%(train)
+	Loss: 0.0052(valid)	|	Acc: 94.6%(valid)
+Epoch: 11  | time in 3 minutes, 28 seconds
+	Loss: 0.0042(train)	|	Acc: 95.6%(train)
+	Loss: 0.0051(valid)	|	Acc: 94.8%(valid)
+Epoch: 12  | time in 3 minutes, 25 seconds
+	Loss: 0.0039(train)	|	Acc: 95.9%(train)
+	Loss: 0.0051(valid)	|	Acc: 94.9%(valid)
+Epoch: 13  | time in 3 minutes, 26 seconds
+	Loss: 0.0037(train)	|	Acc: 96.1%(train)
+	Loss: 0.0049(valid)	|	Acc: 95.0%(valid)
+Epoch: 14  | time in 3 minutes, 26 seconds
+	Loss: 0.0035(train)	|	Acc: 96.3%(train)
+	Loss: 0.0048(valid)	|	Acc: 95.3%(valid)
+Epoch: 15  | time in 3 minutes, 26 seconds
+	Loss: 0.0033(train)	|	Acc: 96.5%(train)
+	Loss: 0.0049(valid)	|	Acc: 95.2%(valid)
+Epoch: 16  | time in 3 minutes, 23 seconds
+	Loss: 0.0031(train)	|	Acc: 96.6%(train)
+	Loss: 0.0048(valid)	|	Acc: 95.3%(valid)
+Epoch: 17  | time in 3 minutes, 28 seconds
+	Loss: 0.0030(train)	|	Acc: 96.8%(train)
+	Loss: 0.0047(valid)	|	Acc: 95.4%(valid)
+Epoch: 18  | time in 3 minutes, 28 seconds
+	Loss: 0.0028(train)	|	Acc: 96.9%(train)
+	Loss: 0.0047(valid)	|	Acc: 95.5%(valid)
+Epoch: 19  | time in 3 minutes, 27 seconds
+	Loss: 0.0027(train)	|	Acc: 97.1%(train)
+	Loss: 0.0047(valid)	|	Acc: 95.4%(valid)
+Epoch: 20  | time in 3 minutes, 25 seconds
+	Loss: 0.0025(train)	|	Acc: 97.2%(train)
+	Loss: 0.0047(valid)	|	Acc: 95.5%(valid)
+Epoch: 21  | time in 3 minutes, 27 seconds
+	Loss: 0.0024(train)	|	Acc: 97.3%(train)
+	Loss: 0.0048(valid)	|	Acc: 95.5%(valid)
+Epoch: 22  | time in 3 minutes, 29 seconds
+	Loss: 0.0023(train)	|	Acc: 97.5%(train)
+	Loss: 0.0047(valid)	|	Acc: 95.6%(valid)
+Epoch: 23  | time in 3 minutes, 28 seconds
+	Loss: 0.0023(train)	|	Acc: 97.5%(train)
+	Loss: 0.0046(valid)	|	Acc: 95.7%(valid)
+Epoch: 24  | time in 3 minutes, 25 seconds
+	Loss: 0.0021(train)	|	Acc: 97.7%(train)
+	Loss: 0.0047(valid)	|	Acc: 95.6%(valid)
+Epoch: 25  | time in 3 minutes, 24 seconds
+	Loss: 0.0020(train)	|	Acc: 97.8%(train)
+	Loss: 0.0049(valid)	|	Acc: 95.5%(valid)
+Epoch: 26  | time in 3 minutes, 26 seconds
+	Loss: 0.0019(train)	|	Acc: 97.9%(train)
+	Loss: 0.0048(valid)	|	Acc: 95.7%(valid)
+Epoch: 27  | time in 3 minutes, 28 seconds
+	Loss: 0.0018(train)	|	Acc: 98.0%(train)
+	Loss: 0.0047(valid)	|	Acc: 95.8%(valid)
+Epoch: 28  | time in 3 minutes, 23 seconds
+	Loss: 0.0017(train)	|	Acc: 98.1%(train)
+	Loss: 0.0049(valid)	|	Acc: 95.8%(valid)
+Epoch: 29  | time in 3 minutes, 28 seconds
+	Loss: 0.0017(train)	|	Acc: 98.1%(train)
+	Loss: 0.0049(valid)	|	Acc: 95.8%(valid)
+Epoch: 30  | time in 3 minutes, 28 seconds
+	Loss: 0.0016(train)	|	Acc: 98.2%(train)
+	Loss: 0.0051(valid)	|	Acc: 95.7%(valid)
+Epoch: 31  | time in 3 minutes, 27 seconds
+	Loss: 0.0015(train)	|	Acc: 98.3%(train)
+	Loss: 0.0050(valid)	|	Acc: 95.8%(valid)
+Epoch: 32  | time in 3 minutes, 26 seconds
+	Loss: 0.0015(train)	|	Acc: 98.3%(train)
+	Loss: 0.0050(valid)	|	Acc: 95.8%(valid)
+Epoch: 33  | time in 3 minutes, 27 seconds
+	Loss: 0.0014(train)	|	Acc: 98.4%(train)
+	Loss: 0.0051(valid)	|	Acc: 95.7%(valid)
+Epoch: 34  | time in 3 minutes, 30 seconds
+	Loss: 0.0014(train)	|	Acc: 98.4%(train)
+	Loss: 0.0050(valid)	|	Acc: 95.9%(valid)
+Epoch: 35  | time in 3 minutes, 28 seconds
+	Loss: 0.0013(train)	|	Acc: 98.5%(train)
+	Loss: 0.0053(valid)	|	Acc: 95.8%(valid)
+Epoch: 36  | time in 3 minutes, 25 seconds
+	Loss: 0.0013(train)	|	Acc: 98.6%(train)
+	Loss: 0.0052(valid)	|	Acc: 95.7%(valid)
+Epoch: 37  | time in 3 minutes, 26 seconds
+	Loss: 0.0013(train)	|	Acc: 98.6%(train)
+	Loss: 0.0051(valid)	|	Acc: 95.8%(valid)
+Epoch: 38  | time in 3 minutes, 26 seconds
+	Loss: 0.0012(train)	|	Acc: 98.6%(train)
+	Loss: 0.0053(valid)	|	Acc: 95.9%(valid)
+Epoch: 39  | time in 3 minutes, 27 seconds
+	Loss: 0.0012(train)	|	Acc: 98.7%(train)
+	Loss: 0.0053(valid)	|	Acc: 95.8%(valid)
+Epoch: 40  | time in 3 minutes, 24 seconds
+	Loss: 0.0011(train)	|	Acc: 98.7%(train)
+	Loss: 0.0056(valid)	|	Acc: 95.7%(valid)
+Epoch: 41  | time in 3 minutes, 28 seconds
+	Loss: 0.0011(train)	|	Acc: 98.8%(train)
+	Loss: 0.0054(valid)	|	Acc: 95.8%(valid)
+Epoch: 42  | time in 3 minutes, 28 seconds
+	Loss: 0.0010(train)	|	Acc: 98.8%(train)
+	Loss: 0.0058(valid)	|	Acc: 95.7%(valid)
+Epoch: 43  | time in 3 minutes, 27 seconds
+	Loss: 0.0010(train)	|	Acc: 98.9%(train)
+	Loss: 0.0055(valid)	|	Acc: 95.8%(valid)
+Epoch: 44  | time in 3 minutes, 25 seconds
+	Loss: 0.0010(train)	|	Acc: 98.8%(train)
+	Loss: 0.0056(valid)	|	Acc: 95.9%(valid)
+Epoch: 45  | time in 3 minutes, 27 seconds
+	Loss: 0.0010(train)	|	Acc: 98.9%(train)
+	Loss: 0.0056(valid)	|	Acc: 95.9%(valid)
+Epoch: 46  | time in 3 minutes, 29 seconds
+	Loss: 0.0009(train)	|	Acc: 99.0%(train)
+	Loss: 0.0057(valid)	|	Acc: 95.9%(valid)
+Epoch: 47  | time in 3 minutes, 28 seconds
+	Loss: 0.0009(train)	|	Acc: 99.0%(train)
+	Loss: 0.0057(valid)	|	Acc: 95.8%(valid)
+Epoch: 48  | time in 3 minutes, 25 seconds
+	Loss: 0.0009(train)	|	Acc: 99.0%(train)
+	Loss: 0.0057(valid)	|	Acc: 95.8%(valid)
+Epoch: 49  | time in 3 minutes, 26 seconds
+	Loss: 0.0009(train)	|	Acc: 99.0%(train)
+	Loss: 0.0055(valid)	|	Acc: 95.9%(valid)
+Epoch: 50  | time in 3 minutes, 26 seconds
+	Loss: 0.0008(train)	|	Acc: 99.0%(train)
+	Loss: 0.0057(valid)	|	Acc: 96.0%(valid)
+Epoch: 51  | time in 3 minutes, 27 seconds
+	Loss: 0.0008(train)	|	Acc: 99.1%(train)
+	Loss: 0.0060(valid)	|	Acc: 95.8%(valid)
+Epoch: 52  | time in 3 minutes, 23 seconds
+	Loss: 0.0008(train)	|	Acc: 99.1%(train)
+	Loss: 0.0059(valid)	|	Acc: 96.0%(valid)
+Epoch: 53  | time in 3 minutes, 28 seconds
+	Loss: 0.0008(train)	|	Acc: 99.1%(train)
+	Loss: 0.0057(valid)	|	Acc: 96.0%(valid)
+Epoch: 54  | time in 3 minutes, 28 seconds
+	Loss: 0.0008(train)	|	Acc: 99.2%(train)
+	Loss: 0.0058(valid)	|	Acc: 95.9%(valid)
+Epoch: 55  | time in 3 minutes, 27 seconds
+	Loss: 0.0008(train)	|	Acc: 99.2%(train)
+	Loss: 0.0060(valid)	|	Acc: 95.8%(valid)
+Epoch: 56  | time in 3 minutes, 25 seconds
+	Loss: 0.0007(train)	|	Acc: 99.2%(train)
+	Loss: 0.0059(valid)	|	Acc: 95.9%(valid)
+Epoch: 57  | time in 3 minutes, 27 seconds
+	Loss: 0.0007(train)	|	Acc: 99.2%(train)
+	Loss: 0.0060(valid)	|	Acc: 95.9%(valid)
+Epoch: 58  | time in 3 minutes, 29 seconds
+	Loss: 0.0007(train)	|	Acc: 99.2%(train)
+	Loss: 0.0060(valid)	|	Acc: 95.8%(valid)
+Epoch: 59  | time in 3 minutes, 28 secondsTraceback (most recent call last):
+  File "/usr/lib/python2.7/SocketServer.py", line 596, in process_request_thread
+    self.finish_request(request, client_address)
+  File "/usr/lib/python2.7/SocketServer.py", line 331, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/local/lib/python2.7/dist-packages/tensorflow/tensorboard/backend/handler.py", line 102, in __init__
+    BaseHTTPServer.BaseHTTPRequestHandler.__init__(self, *args)
+  File "/usr/lib/python2.7/SocketServer.py", line 652, in __init__
+    self.handle()
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 342, in handle
+    self.handle_one_request()
+  File "/usr/lib/python2.7/BaseHTTPServer.py", line 310, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+  File "/usr/lib/python2.7/socket.py", line 480, in readline
+    data = self._sock.recv(self._rbufsize)
+error: [Errno 104] Connection reset by peer
+train.sh: line 10: 44023 Killed                  CUDA_VISIBLE_DEVICES=2,3 python main.py --lr 0.00005 --batch_size 32 --epoch 100 --seed 1992 --embedding_dim 300 --embedding_droprate 0.5 --sequence_len 64 --rnn_droprate 0.5 --train ../data/train.txt --dev ../data/dev.txt --test ../data/test.txt --mode train --output_vocab_label ./model/class.txt --output_vocab_word ./model/vocab.txt --rnn_cell_hidden 1000 --rnn_cell_type GRU --birnn False --num_layers 1
+train.sh: line 11: pe: command not found
+ERROR:tensorflow:Unable to get size of /home/work/liushaohua/text_classification/rnn/tensorboard/events.out.tfevents.1590313116.gpu-0.44023.0: /home/work/liushaohua/text_classification/rnn/tensorboard/events.out.tfevents.1590313116.gpu-0.44023.0
+WARNING:tensorflow:Found more than one graph event per run, or there was a metagraph containing a graph_def, as well as one or more graph events.  Overwriting the graph with the newest event.
+WARNING:tensorflow:Found more than one "run metadata" event with tag step1. Overwriting it with the newest event.
+WARNING:tensorflow:Found more than one graph event per run, or there was a metagraph containing a graph_def, as well as one or more graph events.  Overwriting the graph with the newest event.
+WARNING:tensorflow:Found more than one "run metadata" event with tag step1. Overwriting it with the newest event.
+WARNING:tensorflow:Deleting accumulator 'Acc_train'
+WARNING:tensorflow:Deleting accumulator 'Loss_valid'
+WARNING:tensorflow:Deleting accumulator 'Loss_train'
+WARNING:tensorflow:Deleting accumulator 'Acc_valid'
+train.sh: line 13: 19365 Killed                  CUDA_VISIBLE_DEVICES=2,3 python main.py --lr 0.00005 --batch_size 32 --epoch 100 --seed 1992 --embedding_dim 300 --embedding_droprate 0.5 --sequence_len 64 --rnn_droprate 0.5 --train ../data/train.txt --dev ../data/dev.txt --test ../data/test.txt --mode train --output_vocab_label ./model/class.txt --output_vocab_word ./model/vocab.txt --rnn_cell_hidden 500 --rnn_cell_type GRU --birnn True --num_layers 1
+train.sh: line 13: 19464 Killed                  CUDA_VISIBLE_DEVICES=2,3 python main.py --lr 0.00005 --batch_size 32 --epoch 100 --seed 1992 --embedding_dim 300 --embedding_droprate 0.5 --sequence_len 64 --rnn_droprate 0.5 --train ../data/train.txt --dev ../data/dev.txt --test ../data/test.txt --mode train --output_vocab_label ./model/class.txt --output_vocab_word ./model/vocab.txt --rnn_cell_hidden 500 --rnn_cell_type GRU --birnn True --num_layers 1
+ERROR:tensorflow:Unable to get size of /home/work/liushaohua/text_classification/rnn/tensorboard/events.out.tfevents.1590325802.gpu-0.19464.0: /home/work/liushaohua/text_classification/rnn/tensorboard/events.out.tfevents.1590325802.gpu-0.19464.0
+WARNING:tensorflow:Found more than one graph event per run, or there was a metagraph containing a graph_def, as well as one or more graph events.  Overwriting the graph with the newest event.
+WARNING:tensorflow:Found more than one "run metadata" event with tag step1. Overwriting it with the newest event.
+train.sh: line 13: 19900 Killed                  CUDA_VISIBLE_DEVICES=2,3 python main.py --lr 0.00005 --batch_size 32 --epoch 100 --seed 1992 --embedding_dim 300 --embedding_droprate 0.5 --sequence_len 64 --rnn_droprate 0.5 --train ../data/train.txt --dev ../data/dev.txt --test ../data/test.txt --mode train --output_vocab_label ./model/class.txt --output_vocab_word ./model/vocab.txt --rnn_cell_hidden 500 --rnn_cell_type GRU --birnn True --num_layers 1
+ERROR:tensorflow:Unable to get size of /home/work/liushaohua/text_classification/rnn/tensorboard/events.out.tfevents.1590325868.gpu-0.19900.0: /home/work/liushaohua/text_classification/rnn/tensorboard/events.out.tfevents.1590325868.gpu-0.19900.0
+WARNING:tensorflow:Found more than one graph event per run, or there was a metagraph containing a graph_def, as well as one or more graph events.  Overwriting the graph with the newest event.
+WARNING:tensorflow:Found more than one "run metadata" event with tag step1. Overwriting it with the newest event.
+WARNING:tensorflow:Deleting accumulator 'Acc_train'
+WARNING:tensorflow:Deleting accumulator 'Loss_valid'
+WARNING:tensorflow:Deleting accumulator 'Loss_train'
+WARNING:tensorflow:Deleting accumulator 'Acc_valid'
+cuda
+-----------------------------------------------------------------------------------
+      Layer (type)                    Output Shape         Param #     Tr. Param #
+===================================================================================
+       Embedding-1                   [32, 64, 300]       1,441,500       1,441,500
+         Dropout-2                   [32, 64, 300]               0               0
+             GRU-3     [32, 64, 600], [4, 32, 300]       2,707,200       2,707,200
+         Dropout-4                    [32, 1, 600]               0               0
+          Linear-5                     [32, 1, 27]          16,227          16,227
+===================================================================================
+Total params: 4,164,927
+Trainable params: 4,164,927
+Non-trainable params: 0
+-----------------------------------------------------------------------------------
+Epoch: 1  | time in 2 minutes, 58 seconds
+	Loss: 0.0241(train)	|	Acc: 78.8%(train)
+	Loss: 0.0134(valid)	|	Acc: 87.9%(valid)
+Epoch: 2  | time in 2 minutes, 58 seconds
+	Loss: 0.0108(train)	|	Acc: 90.0%(train)
+	Loss: 0.0092(valid)	|	Acc: 91.2%(valid)
+Epoch: 3  | time in 2 minutes, 58 seconds
+	Loss: 0.0082(train)	|	Acc: 92.2%(train)
+	Loss: 0.0076(valid)	|	Acc: 92.7%(valid)
+Epoch: 4  | time in 2 minutes, 58 seconds
+	Loss: 0.0069(train)	|	Acc: 93.3%(train)
+	Loss: 0.0070(valid)	|	Acc: 93.2%(valid)
+Epoch: 5  | time in 2 minutes, 57 seconds
+	Loss: 0.0061(train)	|	Acc: 93.9%(train)
+	Loss: 0.0064(valid)	|	Acc: 93.7%(valid)
+Epoch: 6  | time in 2 minutes, 59 seconds
+	Loss: 0.0056(train)	|	Acc: 94.4%(train)
+	Loss: 0.0060(valid)	|	Acc: 94.0%(valid)
+Epoch: 7  | time in 2 minutes, 58 seconds
+	Loss: 0.0052(train)	|	Acc: 94.8%(train)
+	Loss: 0.0057(valid)	|	Acc: 94.4%(valid)
+Epoch: 8  | time in 2 minutes, 59 seconds
+	Loss: 0.0048(train)	|	Acc: 95.1%(train)
+	Loss: 0.0055(valid)	|	Acc: 94.6%(valid)
+Epoch: 9  | time in 3 minutes, 0 seconds
+	Loss: 0.0046(train)	|	Acc: 95.3%(train)
+	Loss: 0.0054(valid)	|	Acc: 94.6%(valid)
+Epoch: 10  | time in 2 minutes, 56 seconds
+	Loss: 0.0043(train)	|	Acc: 95.5%(train)
+	Loss: 0.0053(valid)	|	Acc: 94.7%(valid)
+Epoch: 11  | time in 2 minutes, 57 seconds
+	Loss: 0.0041(train)	|	Acc: 95.7%(train)
+	Loss: 0.0050(valid)	|	Acc: 95.0%(valid)
+Epoch: 12  | time in 3 minutes, 2 seconds
+	Loss: 0.0040(train)	|	Acc: 95.8%(train)
+	Loss: 0.0051(valid)	|	Acc: 94.9%(valid)
+Epoch: 13  | time in 2 minutes, 59 seconds
+	Loss: 0.0038(train)	|	Acc: 96.0%(train)
+	Loss: 0.0049(valid)	|	Acc: 95.0%(valid)
+Epoch: 14  | time in 2 minutes, 58 seconds
+	Loss: 0.0036(train)	|	Acc: 96.1%(train)
+	Loss: 0.0048(valid)	|	Acc: 95.2%(valid)
+Epoch: 15  | time in 2 minutes, 58 seconds
+	Loss: 0.0035(train)	|	Acc: 96.3%(train)
+	Loss: 0.0048(valid)	|	Acc: 95.2%(valid)
+Epoch: 16  | time in 2 minutes, 56 seconds
+	Loss: 0.0034(train)	|	Acc: 96.4%(train)
+	Loss: 0.0048(valid)	|	Acc: 95.3%(valid)
+Epoch: 17  | time in 2 minutes, 55 seconds
+	Loss: 0.0033(train)	|	Acc: 96.5%(train)
+	Loss: 0.0047(valid)	|	Acc: 95.3%(valid)
+Epoch: 18  | time in 2 minutes, 56 seconds
+	Loss: 0.0031(train)	|	Acc: 96.7%(train)
+	Loss: 0.0047(valid)	|	Acc: 95.4%(valid)
+Epoch: 19  | time in 2 minutes, 56 seconds
+	Loss: 0.0030(train)	|	Acc: 96.8%(train)
+	Loss: 0.0047(valid)	|	Acc: 95.4%(valid)
+Epoch: 20  | time in 2 minutes, 56 seconds
+	Loss: 0.0029(train)	|	Acc: 96.8%(train)
+	Loss: 0.0047(valid)	|	Acc: 95.5%(valid)
+Epoch: 21  | time in 2 minutes, 56 seconds
+	Loss: 0.0028(train)	|	Acc: 97.0%(train)
+	Loss: 0.0047(valid)	|	Acc: 95.5%(valid)
+Epoch: 22  | time in 2 minutes, 55 seconds
+	Loss: 0.0027(train)	|	Acc: 97.0%(train)
+	Loss: 0.0046(valid)	|	Acc: 95.6%(valid)
+Epoch: 23  | time in 2 minutes, 57 seconds
+	Loss: 0.0027(train)	|	Acc: 97.1%(train)
+	Loss: 0.0047(valid)	|	Acc: 95.4%(valid)
+Epoch: 24  | time in 2 minutes, 59 seconds
+	Loss: 0.0026(train)	|	Acc: 97.2%(train)
+	Loss: 0.0048(valid)	|	Acc: 95.5%(valid)
+Epoch: 25  | time in 2 minutes, 55 seconds
+	Loss: 0.0025(train)	|	Acc: 97.2%(train)
+	Loss: 0.0046(valid)	|	Acc: 95.5%(valid)
+Epoch: 26  | time in 2 minutes, 55 seconds
+	Loss: 0.0024(train)	|	Acc: 97.3%(train)
+	Loss: 0.0045(valid)	|	Acc: 95.7%(valid)
+Epoch: 27  | time in 2 minutes, 57 seconds
+	Loss: 0.0024(train)	|	Acc: 97.4%(train)
+	Loss: 0.0047(valid)	|	Acc: 95.6%(valid)
+Epoch: 28  | time in 2 minutes, 55 seconds
+	Loss: 0.0023(train)	|	Acc: 97.4%(train)
+	Loss: 0.0047(valid)	|	Acc: 95.6%(valid)
+Epoch: 29  | time in 2 minutes, 58 seconds
+	Loss: 0.0022(train)	|	Acc: 97.5%(train)
+	Loss: 0.0048(valid)	|	Acc: 95.6%(valid)
+Epoch: 30  | time in 2 minutes, 57 seconds
+	Loss: 0.0022(train)	|	Acc: 97.6%(train)
+	Loss: 0.0048(valid)	|	Acc: 95.8%(valid)
+Epoch: 31  | time in 2 minutes, 57 seconds
+	Loss: 0.0021(train)	|	Acc: 97.7%(train)
+	Loss: 0.0048(valid)	|	Acc: 95.7%(valid)
+Epoch: 32  | time in 2 minutes, 56 seconds
+	Loss: 0.0021(train)	|	Acc: 97.7%(train)
+	Loss: 0.0048(valid)	|	Acc: 95.6%(valid)
+Epoch: 33  | time in 2 minutes, 56 seconds
+	Loss: 0.0020(train)	|	Acc: 97.8%(train)
+	Loss: 0.0048(valid)	|	Acc: 95.7%(valid)
+Epoch: 34  | time in 2 minutes, 56 seconds
+	Loss: 0.0020(train)	|	Acc: 97.8%(train)
+	Loss: 0.0048(valid)	|	Acc: 95.7%(valid)
+Epoch: 35  | time in 2 minutes, 56 seconds
+	Loss: 0.0019(train)	|	Acc: 97.9%(train)
+	Loss: 0.0050(valid)	|	Acc: 95.7%(valid)
+Epoch: 36  | time in 2 minutes, 57 seconds
+	Loss: 0.0019(train)	|	Acc: 97.9%(train)
+	Loss: 0.0048(valid)	|	Acc: 95.8%(valid)
+Epoch: 37  | time in 2 minutes, 57 seconds
+	Loss: 0.0018(train)	|	Acc: 98.0%(train)
+	Loss: 0.0048(valid)	|	Acc: 95.8%(valid)
+Epoch: 38  | time in 2 minutes, 55 seconds
+	Loss: 0.0018(train)	|	Acc: 98.0%(train)
+	Loss: 0.0049(valid)	|	Acc: 95.7%(valid)
+Epoch: 39  | time in 2 minutes, 56 seconds
+	Loss: 0.0017(train)	|	Acc: 98.1%(train)
+	Loss: 0.0049(valid)	|	Acc: 95.8%(valid)
+Epoch: 40  | time in 2 minutes, 56 seconds
+	Loss: 0.0017(train)	|	Acc: 98.1%(train)
+	Loss: 0.0049(valid)	|	Acc: 95.8%(valid)
+Epoch: 41  | time in 2 minutes, 57 seconds
+	Loss: 0.0016(train)	|	Acc: 98.2%(train)
+	Loss: 0.0049(valid)	|	Acc: 95.6%(valid)
+Epoch: 42  | time in 2 minutes, 59 seconds
+	Loss: 0.0016(train)	|	Acc: 98.2%(train)
+	Loss: 0.0049(valid)	|	Acc: 95.9%(valid)
+Epoch: 43  | time in 2 minutes, 56 seconds
+	Loss: 0.0016(train)	|	Acc: 98.2%(train)
+	Loss: 0.0050(valid)	|	Acc: 95.8%(valid)
+Epoch: 44  | time in 2 minutes, 58 seconds
+	Loss: 0.0015(train)	|	Acc: 98.3%(train)
+	Loss: 0.0051(valid)	|	Acc: 95.8%(valid)
+Epoch: 45  | time in 2 minutes, 58 seconds
+	Loss: 0.0015(train)	|	Acc: 98.3%(train)
+	Loss: 0.0051(valid)	|	Acc: 95.8%(valid)
+Epoch: 46  | time in 2 minutes, 56 seconds
+	Loss: 0.0015(train)	|	Acc: 98.4%(train)
+	Loss: 0.0050(valid)	|	Acc: 95.8%(valid)
+Epoch: 47  | time in 2 minutes, 55 seconds
+	Loss: 0.0014(train)	|	Acc: 98.4%(train)
+	Loss: 0.0051(valid)	|	Acc: 95.8%(valid)
+Epoch: 48  | time in 2 minutes, 56 seconds
+	Loss: 0.0014(train)	|	Acc: 98.4%(train)
+	Loss: 0.0051(valid)	|	Acc: 95.8%(valid)
+Epoch: 49  | time in 2 minutes, 56 seconds
+	Loss: 0.0014(train)	|	Acc: 98.5%(train)
+	Loss: 0.0052(valid)	|	Acc: 95.8%(valid)
+Epoch: 50  | time in 2 minutes, 55 seconds
+	Loss: 0.0014(train)	|	Acc: 98.5%(train)
+	Loss: 0.0052(valid)	|	Acc: 95.7%(valid)
+Epoch: 51  | time in 2 minutes, 56 seconds
+	Loss: 0.0013(train)	|	Acc: 98.5%(train)
+	Loss: 0.0055(valid)	|	Acc: 95.7%(valid)
+Epoch: 52  | time in 2 minutes, 56 seconds
+	Loss: 0.0013(train)	|	Acc: 98.6%(train)
+	Loss: 0.0053(valid)	|	Acc: 95.9%(valid)
+Epoch: 53  | time in 2 minutes, 56 seconds
+	Loss: 0.0012(train)	|	Acc: 98.6%(train)
+	Loss: 0.0052(valid)	|	Acc: 95.9%(valid)
+Epoch: 54  | time in 2 minutes, 56 seconds
+	Loss: 0.0012(train)	|	Acc: 98.6%(train)
+	Loss: 0.0053(valid)	|	Acc: 95.8%(valid)
+Epoch: 55  | time in 2 minutes, 55 seconds
+	Loss: 0.0012(train)	|	Acc: 98.7%(train)
+	Loss: 0.0055(valid)	|	Acc: 95.9%(valid)
+Epoch: 56  | time in 2 minutes, 56 seconds
+	Loss: 0.0012(train)	|	Acc: 98.7%(train)
+	Loss: 0.0054(valid)	|	Acc: 95.8%(valid)
+Epoch: 57  | time in 2 minutes, 56 seconds
+	Loss: 0.0011(train)	|	Acc: 98.7%(train)
+	Loss: 0.0054(valid)	|	Acc: 96.0%(valid)
+Epoch: 58  | time in 2 minutes, 55 seconds
+	Loss: 0.0011(train)	|	Acc: 98.7%(train)
+	Loss: 0.0053(valid)	|	Acc: 95.8%(valid)
+Epoch: 59  | time in 2 minutes, 55 seconds
+	Loss: 0.0011(train)	|	Acc: 98.8%(train)
+	Loss: 0.0056(valid)	|	Acc: 95.8%(valid)
+Epoch: 60  | time in 2 minutes, 55 seconds
+	Loss: 0.0011(train)	|	Acc: 98.8%(train)
+	Loss: 0.0058(valid)	|	Acc: 95.8%(valid)
+Epoch: 61  | time in 2 minutes, 56 seconds
+	Loss: 0.0011(train)	|	Acc: 98.8%(train)
+	Loss: 0.0056(valid)	|	Acc: 95.8%(valid)
+Epoch: 62  | time in 2 minutes, 57 seconds
+	Loss: 0.0010(train)	|	Acc: 98.9%(train)
+	Loss: 0.0057(valid)	|	Acc: 95.9%(valid)
+Epoch: 63  | time in 2 minutes, 56 seconds
+	Loss: 0.0010(train)	|	Acc: 98.9%(train)
+	Loss: 0.0056(valid)	|	Acc: 95.8%(valid)
+Epoch: 64  | time in 2 minutes, 56 seconds
+	Loss: 0.0010(train)	|	Acc: 98.9%(train)
+	Loss: 0.0056(valid)	|	Acc: 95.9%(valid)
+Epoch: 65  | time in 2 minutes, 56 seconds
+	Loss: 0.0010(train)	|	Acc: 98.9%(train)
+	Loss: 0.0057(valid)	|	Acc: 95.9%(valid)
+Epoch: 66  | time in 2 minutes, 58 seconds
+	Loss: 0.0009(train)	|	Acc: 98.9%(train)
+	Loss: 0.0058(valid)	|	Acc: 95.9%(valid)
+Epoch: 67  | time in 2 minutes, 56 seconds
+	Loss: 0.0009(train)	|	Acc: 99.0%(train)
+	Loss: 0.0057(valid)	|	Acc: 96.0%(valid)
+Epoch: 68  | time in 2 minutes, 57 seconds
+	Loss: 0.0009(train)	|	Acc: 99.0%(train)
+	Loss: 0.0059(valid)	|	Acc: 95.8%(valid)
+Epoch: 69  | time in 2 minutes, 57 seconds
+	Loss: 0.0009(train)	|	Acc: 99.0%(train)
+	Loss: 0.0060(valid)	|	Acc: 95.7%(valid)
+Epoch: 70  | time in 2 minutes, 56 seconds
+	Loss: 0.0009(train)	|	Acc: 99.0%(train)
+	Loss: 0.0060(valid)	|	Acc: 95.8%(valid)
+Epoch: 71  | time in 2 minutes, 55 seconds
+	Loss: 0.0009(train)	|	Acc: 99.0%(train)
+	Loss: 0.0058(valid)	|	Acc: 95.8%(valid)
+Epoch: 72  | time in 2 minutes, 56 seconds
+	Loss: 0.0009(train)	|	Acc: 99.0%(train)
+	Loss: 0.0058(valid)	|	Acc: 95.9%(valid)
+Epoch: 73  | time in 2 minutes, 56 seconds
+	Loss: 0.0008(train)	|	Acc: 99.1%(train)
+	Loss: 0.0057(valid)	|	Acc: 96.0%(valid)
+Epoch: 74  | time in 2 minutes, 56 seconds
+	Loss: 0.0008(train)	|	Acc: 99.1%(train)
+	Loss: 0.0059(valid)	|	Acc: 96.0%(valid)
+Epoch: 75  | time in 2 minutes, 58 seconds
+	Loss: 0.0008(train)	|	Acc: 99.1%(train)
+	Loss: 0.0059(valid)	|	Acc: 95.9%(valid)
+Epoch: 76  | time in 2 minutes, 59 seconds
+	Loss: 0.0008(train)	|	Acc: 99.1%(train)
+	Loss: 0.0060(valid)	|	Acc: 96.0%(valid)
+Epoch: 77  | time in 2 minutes, 57 seconds
+	Loss: 0.0008(train)	|	Acc: 99.1%(train)
+	Loss: 0.0060(valid)	|	Acc: 95.9%(valid)
+Epoch: 78  | time in 2 minutes, 56 seconds
+	Loss: 0.0008(train)	|	Acc: 99.1%(train)
+	Loss: 0.0063(valid)	|	Acc: 95.9%(valid)
+Epoch: 79  | time in 2 minutes, 56 seconds
+	Loss: 0.0008(train)	|	Acc: 99.1%(train)
+	Loss: 0.0060(valid)	|	Acc: 95.9%(valid)
+Epoch: 80  | time in 2 minutes, 56 seconds
+	Loss: 0.0007(train)	|	Acc: 99.2%(train)
+	Loss: 0.0061(valid)	|	Acc: 96.0%(valid)
+Epoch: 81  | time in 2 minutes, 55 seconds
+	Loss: 0.0007(train)	|	Acc: 99.2%(train)
+	Loss: 0.0062(valid)	|	Acc: 96.0%(valid)
+Epoch: 82  | time in 2 minutes, 57 seconds
+	Loss: 0.0007(train)	|	Acc: 99.2%(train)
+	Loss: 0.0064(valid)	|	Acc: 95.8%(valid)
+Epoch: 83  | time in 2 minutes, 59 seconds
+	Loss: 0.0007(train)	|	Acc: 99.2%(train)
+	Loss: 0.0061(valid)	|	Acc: 96.0%(valid)
+Epoch: 84  | time in 3 minutes, 0 seconds
+	Loss: 0.0007(train)	|	Acc: 99.2%(train)
+	Loss: 0.0062(valid)	|	Acc: 96.0%(valid)
+Epoch: 85  | time in 2 minutes, 55 seconds
+	Loss: 0.0007(train)	|	Acc: 99.2%(train)
+	Loss: 0.0065(valid)	|	Acc: 95.7%(valid)
+Epoch: 86  | time in 2 minutes, 56 seconds
+	Loss: 0.0007(train)	|	Acc: 99.2%(train)
+	Loss: 0.0063(valid)	|	Acc: 95.9%(valid)
+Epoch: 87  | time in 2 minutes, 55 seconds
+	Loss: 0.0007(train)	|	Acc: 99.3%(train)
+	Loss: 0.0064(valid)	|	Acc: 95.8%(valid)
+Epoch: 88  | time in 2 minutes, 57 seconds
+	Loss: 0.0007(train)	|	Acc: 99.3%(train)
+	Loss: 0.0064(valid)	|	Acc: 95.8%(valid)
+Epoch: 89  | time in 2 minutes, 56 seconds
+	Loss: 0.0007(train)	|	Acc: 99.3%(train)
+	Loss: 0.0064(valid)	|	Acc: 95.8%(valid)
+Epoch: 90  | time in 2 minutes, 56 seconds
+	Loss: 0.0006(train)	|	Acc: 99.3%(train)
+	Loss: 0.0065(valid)	|	Acc: 95.8%(valid)
+Epoch: 91  | time in 2 minutes, 55 seconds
+	Loss: 0.0006(train)	|	Acc: 99.3%(train)
+	Loss: 0.0064(valid)	|	Acc: 96.0%(valid)
+Epoch: 92  | time in 2 minutes, 58 seconds
+	Loss: 0.0006(train)	|	Acc: 99.3%(train)
+	Loss: 0.0065(valid)	|	Acc: 95.9%(valid)
+Epoch: 93  | time in 2 minutes, 57 seconds
+	Loss: 0.0007(train)	|	Acc: 99.3%(train)
+	Loss: 0.0063(valid)	|	Acc: 96.0%(valid)
+Epoch: 94  | time in 2 minutes, 58 seconds
+	Loss: 0.0006(train)	|	Acc: 99.3%(train)
+	Loss: 0.0064(valid)	|	Acc: 95.8%(valid)
+Epoch: 95  | time in 2 minutes, 57 seconds
+	Loss: 0.0006(train)	|	Acc: 99.3%(train)
+	Loss: 0.0066(valid)	|	Acc: 95.8%(valid)
+Epoch: 96  | time in 2 minutes, 55 seconds
+	Loss: 0.0006(train)	|	Acc: 99.3%(train)
+	Loss: 0.0065(valid)	|	Acc: 95.9%(valid)
+Epoch: 97  | time in 2 minutes, 56 seconds
+	Loss: 0.0006(train)	|	Acc: 99.3%(train)
+	Loss: 0.0064(valid)	|	Acc: 96.1%(valid)
+Epoch: 98  | time in 2 minutes, 57 seconds
+	Loss: 0.0006(train)	|	Acc: 99.3%(train)
+	Loss: 0.0067(valid)	|	Acc: 95.8%(valid)
+Epoch: 99  | time in 2 minutes, 56 seconds
+	Loss: 0.0006(train)	|	Acc: 99.3%(train)
+	Loss: 0.0066(valid)	|	Acc: 95.9%(valid)
+Epoch: 100  | time in 2 minutes, 57 seconds
+	Loss: 0.0006(train)	|	Acc: 99.4%(train)
+	Loss: 0.0066(valid)	|	Acc: 95.9%(valid)
+epoch:100 best_valid_acc:0.9586972891566266
+test set loss: 0.006355013847238909
+test set acc: 0.959879563417388

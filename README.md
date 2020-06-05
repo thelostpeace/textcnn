@@ -73,4 +73,23 @@ sh train.sh
 
 ## RNN with Attention
 
-not implete yet.
+you can find test result on `train.sh`.
+
+ - method `dot`, value is LSTM output, query is last hidden state
+ - method `general`, value is LSTM output, query is last hidden state
+ - method `concat`, value is LSTM output, query is last hidden state
+ - method `genquery`, this kind of attention does not have a name, does not have a query, just train a `weight matrix` on `value matrix`, value is last hidden state
+ - method `general`, value is dropout embedding, query is last hidden state
+ - method `genquery`, value is dropout embedding
+
+all these method does not show any improvement on the accuracy of test set.
+
+```
+cd attention
+sh train.sh
+```
+
+## summary
+
+over all these tests, accuracy is about `96%`, on word level tokenization.
+

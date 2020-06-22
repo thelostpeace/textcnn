@@ -93,6 +93,20 @@ sh train.sh
 
 use Bert pretraining from [Harbin Institute of Technology](https://github.com/ymcui/Chinese-BERT-wwm), achieve best results.
 
+training example:
+```
+remind	7:20提醒我要上学了
+garbage	荧光笔在玉林市是有害垃圾吗
+garbage	湿毛发在湘西是无害垃圾吗
+map	我想去黄粱梦镇具体路线
+garbage	吸油纸在黔东南州是不可回收垃圾吗
+takeout	豆芽熊
+chitchat	开心不起来了
+garbage	拖线板在黔南布依族苗族自治州是不可回收垃圾吗
+ewell_medical_care	看一下五床尿常规
+movie	长虹小白我想看动画片
+```
+
  - Use CLS of last layer, `Test Accuracy 97.6%`
  - Attention on CLS of all layers, `Test Accuracy 97.7%`
 

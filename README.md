@@ -94,7 +94,7 @@ sh train.sh
 use Bert pretraining from [Harbin Institute of Technology](https://github.com/ymcui/Chinese-BERT-wwm), achieve best results.
 
  - Use CLS of last layer, `Test Accuracy 97.6%`
- - Attention on CLS of all layers, `Test Accuracy `
+ - Attention on CLS of all layers, `Test Accuracy 97.7%`
 
 ```
 cd bert_pretrain

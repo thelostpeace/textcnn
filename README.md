@@ -89,6 +89,18 @@ cd attention
 sh train.sh
 ```
 
+## Bert Pretrain
+
+use Bert pretraining from [Harbin Institute of Technology](https://github.com/ymcui/Chinese-BERT-wwm), achieve best results.
+
+ - Use CLS of last layer, `Test Accuracy 97.6%`
+ - Attention of CLS of all layers, `Test Accuracy `
+
+```
+cd bert_pretrain
+sh train.sh
+```
+
 ## summary
 
 over all these tests, accuracy is about `96%`, on word level tokenization.

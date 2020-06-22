@@ -42,6 +42,23 @@ def build_vocab(vocab_file, label_save, vocab_save):
         for k in sorted(id2word.keys()):
             f.write("%s\n" % id2word[k])
 
+def build_label(vocab_file, label_save):
+    label2id = dict()
+    id2label = dict()
+    label_idx = 0
+    with open(vocab_file) as f:
+        for line in f:
+            info = line.strip().split('\t')
+            label = info[0]
+            if label not in label2id:
+                label2id[label] = label_idx
+                id2label[label_idx] = label
+                label_idx += 1
+
+    with open(label_save, "w+") as f:
+        for k in sorted(id2label.keys()):
+            f.write("%s\n" % id2label[k])
+
 def load_vocab(vocab_file):
     idx = 0
     vocab2id = dict()
